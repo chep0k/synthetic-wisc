@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Accuracy Validation Viewer</title>
+    <link rel="icon" type="image/jpeg" href="data/favicon.jpg">
+    <!-- Google Fonts for crisp readable reports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Red Hat Text', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f1115;
+            color: #e2e8f0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Red Hat Display', sans-serif;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        /* Left Sidebar: Tree structure */
+        aside {
+            width: 320px;
+            border-right: 1px solid #1e293b;
+            background-color: #151820;
+            display: flex;
+            flex-col: column;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+        
+        .sidebar-header {
+            padding: 16px;
+            border-bottom: 1px solid #1e293b;
+        }
+        
+        .tree-container {
+            flex-1: 1;
+            overflow-y: auto;
+            padding: 12px;
+        }
+        
+        .tree-node {
+            cursor: pointer;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2px;
+            transition: background 0.15s ease;
+        }
+        
+        .tree-node:hover {
+            background-color: #1e293b;
+        }
+        
+        .tree-node.active {
+            background-color: #2e3b52;
+            font-weight: 600;
+        }
+        
+        .school-folder {
+            margin-bottom: 6px;
+        }
+        
+        .school-header {
+            font-weight: 600;
+            color: #94a3b8;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 8px 6px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        
+        .school-header:hover {
+            color: #f1f5f9;
+        }
+        
+        .major-list {
+            padding-left: 8px;
+            border-left: 1px solid #1e293b;
+            margin-left: 6px;
+        }
+        
+        /* Right Content Pane */
+        main {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .card {
+            background-color: #151820;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .header-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .score-badge {
+            font-size: 32px;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Accuracy Grid & Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #1e293b;
+        }
+        
+        th {
+            color: #94a3b8;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 0.05em;
+        }
+        
+        tr.feature-row {
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+        
+        tr.feature-row:hover {
+            background-color: #1a1e28;
+        }
+        
+        tr.feature-row.active {
+            background-color: #2e3b52;
+        }
+        
+        .accuracy-bar-container {
+            width: 120px;
+            height: 8px;
+            background-color: #1e293b;
+            border-radius: 4px;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        
+        .accuracy-bar {
+            height: 100%;
+            border-radius: 4px;
+        }
+        
+        /* Details View */
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .detail-card-title {
+            color: #94a3b8;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside>
+        <div class="sidebar-header">
+            <h3>Academic Hierarchy</h3>
+            <div style="font-size: 11px; color: #94a3b8; margin-top: 4px;">Click nodes to view accuracy reports</div>
+        </div>
+        <div class="tree-container">
+            <div onclick="selectNode('univ')" id="node-univ" class="tree-node active">
+                <span>University Total</span>
+                <span class="mono" id="tree-univ-count">0</span>
+            </div>
+            <div id="tree-schools-list" style="margin-top: 12px;">
+                <!-- Filled dynamically -->
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Panel -->
+    <main>
+        <!-- Header Panel -->
+        <div class="card header-card">
+            <div>
+                <div id="node-type" style="font-size: 11px; text-transform: uppercase; color: #ff4c52; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 4px;">University</div>
+                <h2 id="node-name">University of Wisconsin-Madison</h2>
+                <div style="font-size: 13px; color: #94a3b8; margin-top: 6px;">
+                    Synthesized Students: <strong class="mono text-white" id="count-synth">0</strong> | 
+                    Reference Students: <strong class="mono text-white" id="count-ref">0</strong>
+                </div>
+            </div>
+            <div class="score-badge" id="node-score">100.0%</div>
+        </div>
+
+        <!-- Accuracy Table Card -->
+        <div class="card">
+            <h3 style="margin-bottom: 16px;">Feature Validation Accuracy</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Accuracy Score</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="features-table-body">
+                    <!-- Dynamic rows -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Details Grid (Distribution Comparison) -->
+        <div class="details-grid" id="details-section" style="display: none;">
+            <div class="card">
+                <div class="detail-card-title">Synthesized Distribution</div>
+                <table class="mono">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Count</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody id="detail-synth-body"></tbody>
+                </table>
+            </div>
+            <div class="card">
+                <div class="detail-card-title">Reference Distribution</div>
+                <table class="mono">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Count</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody id="detail-ref-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Load Local Validation Data (CORS-friendly include) -->
+    <script src="data/validation_data.js"></script>
+    <script>
+        let currentNode = null;
+        let activeFeature = null;
+
+        // Initialize UI with loaded validation data
+        window.addEventListener('load', () => {
+            if (!window.validationData) {
+                alert("Error: data/validation_data.js not found or failed to load. Please run validate.py first!");
+                return;
+            }
+            renderTree();
+            selectNode('univ');
+        });
+
+        // Helper to format color based on accuracy percent (HSL scale red-to-green)
+        function getAccuracyColor(percent) {
+            // Percent from 0 to 100 maps to hue from 0 (red) to 120 (green)
+            const hue = Math.max(0, Math.min(120, percent * 1.2));
+            return `hsl(${hue}, 85%, 45%)`;
+        }
+
+        // Render Tree in Sidebar
+        function renderTree() {
+            const list = document.getElementById('tree-schools-list');
+            list.innerHTML = "";
+
+            // Update University Count
+            document.getElementById('tree-univ-count').innerText = window.validationData.count_synth;
+
+            window.validationData.children.forEach((school, sIdx) => {
+                const schoolFolder = document.createElement('div');
+                schoolFolder.className = "school-folder";
+                
+                schoolFolder.innerHTML = `
+                    <div class="school-header" onclick="toggleSchoolFolder(${sIdx})">
+                        <span>${school.name}</span>
+                        <span class="mono" style="font-size: 11px; color: ${getAccuracyColor(school.accuracy.average)}">${school.count_synth}</span>
+                    </div>
+                    <div id="school-majors-${sIdx}" class="major-list" style="display: none;"></div>
+                `;
+                
+                list.appendChild(schoolFolder);
+                
+                // Add majors inside school
+                const majorsDiv = schoolFolder.querySelector(`#school-majors-${sIdx}`);
+                
+                // Add school folder select node
+                const schSelectNode = document.createElement('div');
+                schSelectNode.className = "tree-node";
+                schSelectNode.onclick = (e) => {
+                    e.stopPropagation();
+                    selectNode('school', sIdx);
+                };
+                schSelectNode.id = `node-school-${sIdx}`;
+                schSelectNode.innerHTML = `
+                    <span style="font-style: italic; color: #94a3b8;">[Faculty Overview]</span>
+                    <span class="mono" style="color: ${getAccuracyColor(school.accuracy.average)}">${school.accuracy.average}%</span>
+                `;
+                majorsDiv.appendChild(schSelectNode);
+
+                school.children.forEach((major, mIdx) => {
+                    const majNode = document.createElement('div');
+                    majNode.className = "tree-node";
+                    majNode.id = `node-major-${sIdx}-${mIdx}`;
+                    majNode.onclick = (e) => {
+                        e.stopPropagation();
+                        selectNode('major', sIdx, mIdx);
+                    };
+                    majNode.innerHTML = `
+                        <span class="truncate" style="max-width: 200px;">${major.name}</span>
+                        <span class="mono" style="color: ${getAccuracyColor(major.accuracy.average)}">${major.accuracy.average}%</span>
+                    `;
+                    majorsDiv.appendChild(majNode);
+                });
+            });
+        }
+
+        // Toggle collapsible school folder
+        function toggleSchoolFolder(sIdx) {
+            const div = document.getElementById(`school-majors-${sIdx}`);
+            if (div.style.display === "none") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+
+        // Select Node and populate central tables
+        function selectNode(type, sIdx = null, mIdx = null) {
+            // Remove active classes
+            document.querySelectorAll('.tree-node').forEach(n => n.classList.remove('active'));
+            
+            if (type === 'univ') {
+                currentNode = window.validationData;
+                document.getElementById('node-univ').classList.add('active');
+                document.getElementById('node-type').innerText = "University Aggregate";
+            } else if (type === 'school') {
+                currentNode = window.validationData.children[sIdx];
+                document.getElementById(`node-school-${sIdx}`).classList.add('active');
+                document.getElementById('node-type').innerText = "School / College Faculty";
+            } else if (type === 'major') {
+                currentNode = window.validationData.children[sIdx].children[mIdx];
+                document.getElementById(`node-major-${sIdx}-${mIdx}`).classList.add('active');
+                document.getElementById('node-type').innerText = "Academic Plan / Major Node";
+            }
+
+            // Populate header stats
+            document.getElementById('node-name').innerText = currentNode.name;
+            document.getElementById('count-synth').innerText = currentNode.count_synth.toLocaleString();
+            document.getElementById('count-ref').innerText = currentNode.count_ref.toLocaleString();
+            
+            const avgScore = currentNode.accuracy.average;
+            const scoreBadge = document.getElementById('node-score');
+            scoreBadge.innerText = avgScore + '%';
+            scoreBadge.style.color = getAccuracyColor(avgScore);
+            scoreBadge.style.backgroundColor = `rgba(0, 200, 0, 0.05)`;
+            scoreBadge.style.border = `1px solid ${getAccuracyColor(avgScore)}`;
+
+            // Render features list
+            renderFeaturesTable();
+            activeFeature = null;
+            document.getElementById('details-section').style.display = "none";
+        }
+
+        // Render individual feature accuracies for selected node
+        function renderFeaturesTable() {
+            const tbody = document.getElementById('features-table-body');
+            tbody.innerHTML = "";
+
+            const featuresKeys = Object.keys(currentNode.accuracy).filter(k => k !== 'average');
+            
+            featuresKeys.forEach(feat => {
+                const acc = currentNode.accuracy[feat];
+                const tr = document.createElement('tr');
+                tr.className = "feature-row";
+                tr.onclick = () => selectFeature(feat, tr);
+                
+                // Color status text
+                let statusText = "Excellent";
+                if (acc < 90) statusText = "Moderate Mismatch";
+                if (acc < 70) statusText = "Significant Divergence";
+                if (acc === 100.0) statusText = "Perfect 100% Match";
+
+                tr.innerHTML = `
+                    <td class="font-medium" style="text-transform: capitalize;">${feat.replace(/_/g, ' ')}</td>
+                    <td class="mono">
+                        <div class="accuracy-bar-container">
+                            <div class="accuracy-bar" style="width: ${acc}%; background-color: ${getAccuracyColor(acc)}"></div>
+                        </div>
+                        <span style="color: ${getAccuracyColor(acc)}; font-weight: bold">${acc}%</span>
+                    </td>
+                    <td style="color: ${acc === 100.0 ? '#10b981' : (acc > 90.0 ? '#94a3b8' : '#ff4c52')}">${statusText}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Click feature to see side-by-side distribution details
+        function selectFeature(feat, rowElement) {
+            document.querySelectorAll('.feature-row').forEach(r => r.classList.remove('active'));
+            rowElement.classList.add('active');
+            activeFeature = feat;
+
+            const detail = currentNode.details[feat];
+            if (!detail) return;
+
+            document.getElementById('details-section').style.display = "grid";
+
+            const synthBody = document.getElementById('detail-synth-body');
+            const refBody = document.getElementById('detail-ref-body');
+            synthBody.innerHTML = "";
+            refBody.innerHTML = "";
+
+            const allCats = new Set([...Object.keys(detail.synth), ...Object.keys(detail.ref)]).values();
+            const sortedCats = Array.from(allCats).sort();
+
+            const sSum = Object.values(detail.synth).reduce((a, b) => a + b, 0);
+            const rSum = Object.values(detail.ref).reduce((a, b) => a + b, 0);
+
+            sortedCats.forEach(cat => {
+                const sVal = detail.synth[cat] || 0;
+                const rVal = detail.ref[cat] || 0;
+
+                const sPct = sSum > 0 ? ((sVal / sSum) * 100).toFixed(1) + '%' : '0%';
+                const rPct = rSum > 0 ? ((rVal / rSum) * 100).toFixed(1) + '%' : '0%';
+
+                // Highlight discrepancies
+                const isMatch = sPct === rPct;
+
+                // Synth Row
+                const trS = document.createElement('tr');
+                trS.style.color = isMatch ? '#e2e8f0' : '#fda4af';
+                trS.innerHTML = `
+                    <td>${cat}</td>
+                    <td>${typeof sVal === 'number' ? sVal.toLocaleString() : sVal}</td>
+                    <td>${sPct}</td>
+                `;
+                synthBody.appendChild(trS);
+
+                // Ref Row
+                const trR = document.createElement('tr');
+                trR.style.color = isMatch ? '#e2e8f0' : '#fda4af';
+                trR.innerHTML = `
+                    <td>${cat}</td>
+                    <td>${typeof rVal === 'number' ? rVal.toLocaleString() : rVal}</td>
+                    <td>${rPct}</td>
+                `;
+                refBody.appendChild(trR);
+            });
+        }
+    </script>
+</body>
+</html>

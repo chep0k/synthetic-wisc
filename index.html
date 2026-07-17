@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual UW-Madison Campus Explorer</title>
+    <link rel="icon" type="image/jpeg" href="data/favicon.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        badgerRed: '#c5050c',
+                        badgerDarkRed: '#9b0006',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Red Hat Text', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Red Hat Display', sans-serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        /* Grid pattern background for classroom */
+        .classroom-grid {
+            background-image: radial-gradient(#e2e8f0 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="flex flex-col h-screen overflow-hidden">
+
+    <!-- Splash / Welcome Overlay -->
+    <div id="splashOverlay" class="fixed inset-0 bg-white/95 backdrop-blur-md z-50 flex items-center justify-center p-6 transition-all duration-700">
+        <div class="max-w-xl w-full bg-white border border-slate-100 rounded-3xl p-8 shadow-2xl text-center flex flex-col items-center">
+            <div class="w-16 h-16 rounded-2xl bg-red-50 text-badgerRed flex items-center justify-center text-3xl mb-6 shadow-sm">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 mb-2">Virtual UW-Madison</h1>
+            <p class="text-slate-500 text-sm mb-6">Interactive Campus Explorer</p>
+            
+            <div class="bg-red-50/50 border border-red-100/50 rounded-2xl p-5 mb-8 text-slate-700 text-sm leading-relaxed text-left">
+                <p class="font-semibold text-badgerRed mb-1"><i class="fa-solid fa-circle-info mr-2"></i>Simulation Disclaimer</p>
+                All student profiles and transcripts displayed herein are synthetically generated and do not represent any actual individuals. This environment is created solely for research and analysis. The underlying statistical distributions of the source registrar records have been preserved with 100% mathematical fidelity.
+            </div>
+
+            <!-- Loading phase / Enter button container -->
+            <div class="w-full" id="splashInteraction">
+                <div class="w-full bg-slate-100 rounded-full h-2 mb-4 overflow-hidden" id="progressContainer">
+                    <div id="progressBar" class="bg-badgerRed h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between text-xs text-slate-400 mb-6">
+                    <span id="loadStatus">Initializing...</span>
+                    <span id="loadPercent">0%</span>
+                </div>
+                <button id="enterBtn" onclick="dismissSplash()" disabled class="w-full py-3.5 rounded-2xl bg-slate-200 text-slate-400 font-bold text-sm tracking-wide cursor-not-allowed transition-all duration-300">
+                    Loading Campus Database...
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Navigation Header -->
+    <header class="h-16 bg-white border-b border-slate-100 flex items-center justify-between px-6 shrink-0 z-40 shadow-sm">
+        <div class="flex items-center gap-4">
+            <div class="w-9 h-9 rounded-lg bg-red-50 text-badgerRed flex items-center justify-center text-lg">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+                <span class="font-display font-extrabold text-base tracking-wide text-slate-900">VIRTUAL CAMPUS</span>
+            </div>
+        </div>
+        <div class="flex items-center gap-6 text-xs text-slate-500">
+            <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-sm animate-pulse"></span>
+                <span>Active Database: <strong class="text-slate-800" id="statStudents">74,780</strong> Synthetic Pupils</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb & Search Navigation Bar (STABLE LAYOUT - NO JUMPING) -->
+    <nav class="bg-slate-50 border-b border-slate-100 px-6 h-11 flex items-center justify-between text-xs text-slate-400 shrink-0 select-none">
+        <!-- Left Side: Breadcrumbs (Fixed Width Container to Prevent Shift) -->
+        <div class="flex items-center gap-2 font-medium min-w-[400px]" id="breadcrumbs">
+            <span class="hover:text-badgerRed cursor-pointer transition flex items-center gap-1" onclick="navigate('university')"><i class="fa-solid fa-school"></i> University</span>
+        </div>
+        <!-- Right Side: Global Search (Stable Reserved Width to Prevent Layout Shift) -->
+        <div class="flex items-center justify-end w-64" id="searchContainer">
+            <div class="relative opacity-0 pointer-events-none transition-opacity duration-200" id="globalSearchBox">
+                <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400"><i class="fa-solid fa-magnifying-glass text-[10px]"></i></span>
+                <input type="text" id="globalSearchInput" oninput="handleSearch()" placeholder="Search students in major..." class="bg-white border border-slate-200 rounded-lg pl-8 pr-3 py-1.5 text-xs text-slate-700 placeholder-slate-400 focus:outline-none focus:border-badgerRed focus:ring-1 focus:ring-badgerRed w-56">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Unified Stable Header Section (NO FLAKING - EXACT SAME HEIGHT & FONT SIZES) -->
+    <div class="bg-white border-b border-slate-100 px-8 py-5 h-24 shrink-0 flex flex-col justify-center">
+        <h2 class="text-xl font-extrabold text-slate-900 tracking-tight" id="stableHeaderTitle">Academic Colleges & Schools</h2>
+        <p class="text-slate-500 text-sm mt-1" id="stableHeaderSubtext">Select an academic school or college block to explore departments and majors.</p>
+    </div>
+
+    <!-- Main Workspace Container -->
+    <main class="flex-1 overflow-hidden relative">
+
+        <!-- University Level View (Campus Grid of School Cards) -->
+        <section id="view-university" class="absolute inset-0 overflow-y-auto p-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="schoolGrid">
+                    <!-- Dynamic School Cards Inserted Here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- School Level View (Department Map of Major Cards) -->
+        <section id="view-school" class="absolute inset-0 overflow-y-auto p-8 hidden">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="majorGrid">
+                    <!-- Dynamic Major Cards Inserted Here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Major Level View (Classroom Lecture Hall Visualizer - NO SCROLLBARS) -->
+        <section id="view-major" class="absolute inset-0 hidden flex flex-col overflow-hidden">
+            <!-- Controls Bar (No Legend or Demographic Splitting) -->
+            <div class="px-6 py-2 border-b border-slate-100 bg-white flex items-center justify-between shrink-0 h-11">
+                <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-600">
+                    <span class="w-3 h-3 rounded-full bg-sky-400 border border-sky-500 shadow-sm"></span>
+                    <span>Male</span>
+                    <span class="w-3 h-3 rounded-full bg-pink-400 border border-pink-500 shadow-sm ml-3"></span>
+                    <span>Female</span>
+                </div>
+                <div class="flex items-center border border-slate-200 rounded-lg p-0.5 bg-slate-50 gap-1 text-slate-600 shadow-sm shrink-0">
+                    <button onclick="zoomClassroom(1.1)" class="w-7 h-7 rounded-md bg-white hover:bg-slate-100 flex items-center justify-center text-xs font-bold transition shadow-sm border border-slate-100" title="Zoom In">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button onclick="zoomClassroom(0.9)" class="w-7 h-7 rounded-md bg-white hover:bg-slate-100 flex items-center justify-center text-xs font-bold transition shadow-sm border border-slate-100" title="Zoom Out">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <button onclick="resetClassroom()" class="w-12 h-7 rounded-md bg-white hover:bg-slate-100 flex items-center justify-center text-[10px] font-bold uppercase transition shadow-sm border border-slate-100" title="Reset View">
+                        Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- Seating Grid Workplace (Fits exactly into single page view) -->
+            <div class="flex-1 classroom-grid bg-[#fcfdfe] relative overflow-hidden select-none cursor-grab" id="classroomWorkspace" onmousedown="startPan(event)">
+                <div id="seatingChartWrapper" class="absolute top-1/2 left-1/2 origin-center transition-transform duration-75 ease-out flex items-center justify-center">
+                    <!-- Desk rows fit dynamically here -->
+                    <div id="classroomGridContainer" class="flex flex-col gap-1 items-center justify-center"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="h-8 bg-white border-t border-slate-100 flex items-center justify-between px-6 shrink-0 z-30 text-[10px] text-slate-400 select-none shadow-sm">
+        <div>
+            <span>&copy; 2026 chep0k | MIT License</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="https://github.com/chep0k/synthetic-wisc" target="_blank" class="hover:text-badgerRed transition"><i class="fa-brands fa-github mr-1"></i>Source Code</a>
+        </div>
+    </footer>
+
+    <!-- Custom Interactive Tooltip -->
+    <div id="seatTooltip" class="absolute z-50 pointer-events-none bg-slate-900 text-white rounded-lg px-3 py-2 text-xs font-medium shadow-lg border border-slate-800 opacity-0 transition-opacity duration-250 flex flex-col gap-0.5">
+        <span id="tooltipName" class="font-bold">Pupil #0</span>
+        <span id="tooltipId" class="text-[10px] text-slate-400">ID: #UW0</span>
+    </div>
+
+    <!-- Student Profile Modal (Popup Card) -->
+    <div id="profileModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-6 hidden transition-all duration-300 opacity-0" onclick="closeModal(event)">
+        <div class="bg-white max-w-4xl w-full max-h-[85vh] rounded-3xl shadow-2xl border border-slate-100 overflow-hidden flex flex-col transition-all duration-300 scale-95" onclick="event.stopPropagation()">
+            
+            <!-- Modal Header -->
+            <div class="px-6 py-5 bg-slate-50 border-b border-slate-100 flex items-center justify-between shrink-0">
+                <div class="flex items-center gap-3">
+                    <div id="modalAvatar" class="w-11 h-11 rounded-xl bg-red-50 text-badgerRed flex items-center justify-center text-xl shadow-sm">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-base font-extrabold text-slate-900 tracking-tight" id="modalName">Pupil #0</h2>
+                        <p class="text-slate-400 text-[10px] font-bold tracking-wider uppercase" id="modalId">ID: #UW0</p>
+                    </div>
+                </div>
+                <button onclick="closeModal(event)" class="w-8 h-8 rounded-full hover:bg-slate-200 text-slate-400 hover:text-slate-600 flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark text-sm"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content (Scrollable) -->
+            <div class="flex-1 overflow-y-auto p-6 space-y-6 text-xs">
+                
+                <!-- Main Highlights -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    <div class="bg-slate-50/50 border border-slate-100 rounded-2xl p-4 text-center">
+                        <dt class="text-slate-400 font-semibold mb-1">Term GPA</dt>
+                        <dd class="text-lg font-black text-slate-800" id="modalGPA">0.00</dd>
+                    </div>
+                    <div class="bg-slate-50/50 border border-slate-100 rounded-2xl p-4 text-center">
+                        <dt class="text-slate-400 font-semibold mb-1">Standard Credits</dt>
+                        <dd class="text-lg font-black text-slate-800" id="modalStdCredits">0</dd>
+                    </div>
+                    <div class="bg-slate-50/50 border border-slate-100 rounded-2xl p-4 text-center">
+                        <dt class="text-slate-400 font-semibold mb-1">Virtual Credits</dt>
+                        <dd class="text-lg font-black text-slate-800" id="modalVirCredits">0</dd>
+                    </div>
+                    <div class="bg-slate-50/50 border border-slate-100 rounded-2xl p-4 text-center">
+                        <dt class="text-slate-400 font-semibold mb-1">Standing</dt>
+                        <dd class="text-base font-extrabold text-slate-800" id="modalStanding">Undergrad</dd>
+                    </div>
+                </div>
+
+                <!-- Academic Details -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Academics Card -->
+                    <div class="border border-slate-100 rounded-2xl p-5 space-y-4">
+                        <h3 class="font-extrabold text-slate-900 border-b border-slate-100 pb-2 flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-badgerRed"></i>Academics</h3>
+                        <dl class="space-y-3">
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">School/College</dt><dd class="font-semibold text-slate-800 text-right" id="modalSchool">Letters & Science</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Academic Plan</dt><dd class="font-semibold text-slate-800 text-right" id="modalPlan">Computer Science</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Student Level</dt><dd class="font-semibold text-slate-800 text-right" id="modalLevel">Undergrad</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Admit Type</dt><dd class="font-semibold text-slate-800 text-right" id="modalAdmit">Continuing</dd></div>
+                        </dl>
+                    </div>
+
+                    <!-- Demographics Card -->
+                    <div class="border border-slate-100 rounded-2xl p-5 space-y-4">
+                        <h3 class="font-extrabold text-slate-900 border-b border-slate-100 pb-2 flex items-center gap-2"><i class="fa-solid fa-id-card text-badgerRed"></i>Demographics</h3>
+                        <dl class="space-y-3">
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Legal Sex</dt><dd class="font-semibold text-slate-800 text-right" id="modalSex">Male</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Age Group</dt><dd class="font-semibold text-slate-800 text-right" id="modalAge">18 to 21</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Race/Ethnicity</dt><dd class="font-semibold text-slate-800 text-right" id="modalRace">White</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Citizenship</dt><dd class="font-semibold text-slate-800 text-right" id="modalCitizenship">Citizen</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Wisconsin Residency</dt><dd class="font-semibold text-slate-800 text-right" id="modalResidency">Resident</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Home Region</dt><dd class="font-semibold text-slate-800 text-right" id="modalRegType">WI County</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Home Location</dt><dd class="font-semibold text-slate-800 text-right" id="modalLoc">Dane</dd></div>
+                        </dl>
+                    </div>
+
+                    <!-- Prior School Card -->
+                    <div class="border border-slate-100 rounded-2xl p-5 space-y-4">
+                        <h3 class="font-extrabold text-slate-900 border-b border-slate-100 pb-2 flex items-center gap-2"><i class="fa-solid fa-school text-badgerRed"></i>Prior School</h3>
+                        <dl class="space-y-3">
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Prior School Code</dt><dd class="font-semibold text-slate-800 text-right" id="modalInstCode">N/A</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Prior School</dt><dd class="font-semibold text-slate-800 text-right" id="modalInstName">N/A</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-400 shrink-0">Prior Location</dt><dd class="font-semibold text-slate-800 text-right" id="modalInstLoc">N/A</dd></div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Academic Transcript / Courses Table -->
+                <div class="border border-slate-100 rounded-2xl p-5 space-y-4">
+                    <h3 class="font-extrabold text-slate-900 border-b border-slate-100 pb-2 flex items-center gap-2"><i class="fa-solid fa-scroll text-badgerRed"></i>Academic Course Transcript</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="border-b border-slate-100 text-slate-400 font-bold uppercase tracking-wider text-[10px]">
+                                    <th class="py-2.5">Code</th>
+                                    <th class="py-2.5">Course Title</th>
+                                    <th class="py-2.5">Section</th>
+                                    <th class="py-2.5 text-center">Credits</th>
+                                    <th class="py-2.5 text-center">Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modalTranscriptBody" class="divide-y divide-slate-50 text-slate-700">
+                                <!-- Dynamic Transcript Rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SQLJS WASM Integration -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+    <script>
+        let db = null;
+        let activeSchool = null;
+        let activeMajor = null;
+        let activeStudents = [];
+        let filteredStudents = [];
+
+        // Zoom / Pan variables
+        let currentScale = 1.0;
+        let currentTranslateX = 0;
+        let currentTranslateY = 0;
+        let isDragging = false;
+        let startX, startY;
+
+        // Initialize database
+        async function initDB() {
+            const progress = document.getElementById('progressBar');
+            const percentText = document.getElementById('loadPercent');
+            const status = document.getElementById('loadStatus');
+            const enterBtn = document.getElementById('enterBtn');
+            
+            try {
+                status.innerText = "Loading SQL WASM Engine...";
+                percentText.innerText = "15%";
+                progress.style.width = "15%";
+                
+                const SQL = await initSqlJs({
+                    locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`
+                });
+                
+                status.innerText = "Downloading virtual_university.db (32MB)...";
+                percentText.innerText = "45%";
+                progress.style.width = "45%";
+                
+                const response = await fetch('data/virtual_university.db');
+                if (!response.ok) throw new Error("Database download failed!");
+                
+                const reader = response.body.getReader();
+                const contentLength = +response.headers.get('Content-Length') || 33554432;
+                
+                let receivedLength = 0;
+                let chunks = [];
+                
+                while(true) {
+                    const {done, value} = await reader.read();
+                    if (done) break;
+                    chunks.push(value);
+                    receivedLength += value.length;
+                    
+                    const pct = Math.min(45 + Math.round((receivedLength / contentLength) * 45), 90);
+                    percentText.innerText = `${pct}%`;
+                    progress.style.width = `${pct}%`;
+                    status.innerText = `Downloading database: ${Math.round(receivedLength / (1024*1024))}MB / 32MB`;
+                }
+                
+                status.innerText = "Compiling Database in memory...";
+                percentText.innerText = "95%";
+                progress.style.width = "95%";
+                
+                const chunksAll = new Uint8Array(receivedLength);
+                let position = 0;
+                for(let chunk of chunks) {
+                    chunksAll.set(chunk, position);
+                    position += chunk.length;
+                }
+                
+                db = new SQL.Database(chunksAll);
+                
+                status.innerText = "Database compiled!";
+                percentText.innerText = "100%";
+                progress.style.width = "100%";
+                
+                // Enable button
+                enterBtn.removeAttribute('disabled');
+                enterBtn.className = "w-full py-3.5 rounded-2xl bg-badgerRed hover:bg-badgerDarkRed text-white font-bold text-sm tracking-wide shadow-md transition-all duration-300 cursor-pointer";
+                enterBtn.innerText = "Enter Campus Explorer";
+                
+            } catch (err) {
+                console.error(err);
+                status.innerText = "Database error: " + err.message;
+                status.classList.add('text-red-500');
+            }
+        }
+
+        window.addEventListener('load', initDB);
+
+        function dismissSplash() {
+            const overlay = document.getElementById('splashOverlay');
+            overlay.classList.add('opacity-0');
+            setTimeout(() => {
+                overlay.style.display = 'none';
+                loadUniversityView();
+            }, 600);
+        }
+
+        // NAVIGATION SYSTEM (STABLE AND PREDICTABLE)
+        function navigate(level, data1 = null, data2 = null) {
+            if (data1) data1 = data1.replace(/\\'/g, "'");
+            if (data2) data2 = data2.replace(/\\'/g, "'");
+            // Hide all views
+            document.getElementById('view-university').classList.add('hidden');
+            document.getElementById('view-school').classList.add('hidden');
+            document.getElementById('view-major').classList.add('hidden');
+            
+            // Adjust search bar visibility (opacity based transition to avoid jumpiness)
+            const searchBox = document.getElementById('globalSearchBox');
+            if (level === 'major') {
+                searchBox.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                searchBox.classList.add('opacity-0', 'pointer-events-none');
+            }
+
+            // Reset zoom
+            resetClassroom();
+
+            if (level === 'university') {
+                activeSchool = null;
+                activeMajor = null;
+                document.getElementById('view-university').classList.remove('hidden');
+                
+                // Update stable page header
+                document.getElementById('stableHeaderTitle').innerText = "Academic Colleges & Schools";
+                document.getElementById('stableHeaderSubtext').innerText = "Select an academic school or college block to explore departments and majors.";
+            } else if (level === 'school') {
+                activeSchool = data1;
+                activeMajor = null;
+                document.getElementById('view-school').classList.remove('hidden');
+                
+                // Update stable page header
+                document.getElementById('stableHeaderTitle').innerText = `School: ${data1}`;
+                document.getElementById('stableHeaderSubtext').innerText = "Select a major program block to explore departments and majors.";
+                loadSchoolView(data1);
+            } else if (level === 'major') {
+                activeSchool = data1;
+                activeMajor = data2;
+                document.getElementById('view-major').classList.remove('hidden');
+                
+                // Block pointer events temporarily to prevent accidental hover/click triggers on loading
+                const workspace = document.getElementById('classroomWorkspace');
+                workspace.style.pointerEvents = 'none';
+                setTimeout(() => {
+                    workspace.style.pointerEvents = 'auto';
+                }, 300);
+
+                // Update stable page header
+                document.getElementById('stableHeaderTitle').innerText = `Major: ${data2}`;
+                document.getElementById('stableHeaderSubtext').innerText = "Hover over a seat to inspect, click to view profile. Drag to pan, wheel/buttons to zoom.";
+                loadMajorView(data1, data2);
+            }
+
+            updateBreadcrumbs();
+        }
+
+        function updateBreadcrumbs() {
+            const bc = document.getElementById('breadcrumbs');
+            bc.innerHTML = `<span class="hover:text-badgerRed cursor-pointer transition flex items-center gap-1" onclick="navigate('university')"><i class="fa-solid fa-school"></i> University</span>`;
+            
+            if (activeSchool) {
+                bc.innerHTML += `
+                    <span class="mx-1.5 text-slate-300">/</span>
+                    <span class="hover:text-badgerRed cursor-pointer transition" onclick="navigate('school', '${activeSchool.replace(/'/g, "\\'")}')">${activeSchool}</span>
+                `;
+            }
+            if (activeMajor) {
+                bc.innerHTML += `
+                    <span class="mx-1.5 text-slate-300">/</span>
+                    <span class="text-slate-600 font-bold select-text">${activeMajor}</span>
+                `;
+            }
+        }
+
+        // Helper to retrieve and sort school names
+        function getSortedSchools() {
+            const stmt = db.prepare("SELECT DISTINCT plan_school_college FROM students");
+            let schoolNames = [];
+            while(stmt.step()) {
+                schoolNames.push(stmt.getAsObject().plan_school_college);
+            }
+            stmt.free();
+
+            // Custom sort: Graduate School and Continuing Studies go to the end
+            const endSchools = ['Graduate School', 'Continuing Studies'];
+            let sorted = schoolNames.filter(name => !endSchools.includes(name));
+            sorted.sort();
+            
+            if (schoolNames.includes('Graduate School')) sorted.push('Graduate School');
+            if (schoolNames.includes('Continuing Studies')) sorted.push('Continuing Studies');
+            
+            return sorted;
+        }
+
+        // 1. UNIVERSITY VIEW
+        function loadUniversityView() {
+            if (!db) return;
+            const grid = document.getElementById('schoolGrid');
+            grid.innerHTML = "";
+
+            const sortedSchools = getSortedSchools();
+            
+            // Total students in DB
+            const totStmt = db.prepare("SELECT COUNT(*) as cnt FROM students");
+            totStmt.step();
+            const grandTotal = totStmt.getAsObject().cnt;
+            totStmt.free();
+
+            // Set student count in header
+            document.getElementById('statStudents').innerText = grandTotal.toLocaleString();
+
+            const schoolIcons = {
+                'Letters & Science': 'fa-book-open-reader',
+                'Business': 'fa-chart-pie',
+                'Engineering': 'fa-gears',
+                'Education': 'fa-chalkboard-user',
+                'Agricultural and Life Sciences': 'fa-wheat-awn',
+                'Human Ecology': 'fa-people-roof',
+                'Graduate School': 'fa-user-graduate',
+                'Medicine and Public Health': 'fa-stethoscope',
+                'Continuing Studies': 'fa-arrow-rotate-left',
+                'Nursing': 'fa-user-nurse',
+                'Pharmacy': 'fa-pills',
+                'Law': 'fa-scale-balanced',
+                'Environmental Studies': 'fa-leaf',
+                'Veterinary Medicine': 'fa-paw'
+            };
+
+            sortedSchools.forEach(school => {
+                const escSchool = school.replace(/'/g, "''");
+                const jsSchool = school.replace(/'/g, "\\'");
+
+                // Headcount
+                const countStmt = db.prepare(`SELECT COUNT(*) as cnt FROM students WHERE plan_school_college = '${escSchool}'`);
+                countStmt.step();
+                const count = countStmt.getAsObject().cnt;
+                countStmt.free();
+
+                // Distinct majors count
+                const planStmt = db.prepare(`SELECT COUNT(DISTINCT academic_plan) as pcnt FROM students WHERE plan_school_college = '${escSchool}'`);
+                planStmt.step();
+                const planCount = planStmt.getAsObject().pcnt;
+                planStmt.free();
+
+                const pct = ((count / grandTotal) * 100).toFixed(1);
+                const icon = schoolIcons[school] || 'fa-building-columns';
+
+                const card = document.createElement('div');
+                card.className = "bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-lg hover:border-slate-200 cursor-pointer transition-all duration-300 flex flex-col justify-between group";
+                card.onclick = () => navigate('school', jsSchool);
+                card.innerHTML = `
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-2xl bg-slate-50 text-slate-700 flex items-center justify-center text-xl group-hover:bg-red-50 group-hover:text-badgerRed transition-colors duration-300">
+                                <i class="fa-solid ${icon}"></i>
+                            </div>
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wide bg-slate-50 px-2 py-0.5 rounded-full">${pct}% of University</span>
+                        </div>
+                        <div>
+                            <h3 class="font-extrabold text-slate-800 text-base tracking-tight leading-snug group-hover:text-badgerRed transition-colors">${school}</h3>
+                            <p class="text-slate-400 text-[10px] mt-1 font-semibold uppercase tracking-wider">${planCount} Major Programs</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 space-y-2">
+                        <div class="flex justify-between text-xs font-semibold">
+                            <span class="text-slate-400">Headcount</span>
+                            <span class="text-slate-800">${count.toLocaleString()} Students</span>
+                        </div>
+                        <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-badgerRed h-1.5 rounded-full group-hover:bg-badgerDarkRed transition-colors" style="width: ${pct}%"></div>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // 2. SCHOOL VIEW (Plain major cards, alphabetical order)
+        function loadSchoolView(schoolName) {
+            if (!db) return;
+            const grid = document.getElementById('majorGrid');
+            grid.innerHTML = "";
+
+            const escSchool = schoolName.replace(/'/g, "''");
+            const stmt = db.prepare(`SELECT DISTINCT academic_plan FROM students WHERE plan_school_college = '${escSchool}' ORDER BY academic_plan`);
+            
+            while(stmt.step()) {
+                const plan = stmt.getAsObject().academic_plan;
+                const escPlan = plan.replace(/'/g, "''");
+                const jsPlan = plan.replace(/'/g, "\\'");
+                const jsSchool = schoolName.replace(/'/g, "\\'");
+
+                // Headcount
+                const countStmt = db.prepare(`SELECT COUNT(*) as cnt FROM students WHERE academic_plan = '${escPlan}'`);
+                countStmt.step();
+                const count = countStmt.getAsObject().cnt;
+                countStmt.free();
+
+                const card = document.createElement('div');
+                card.className = "bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-lg hover:border-slate-200 cursor-pointer transition-all duration-300 flex flex-col justify-between group";
+                card.onclick = () => navigate('major', jsSchool, jsPlan);
+                card.innerHTML = `
+                    <div class="space-y-4">
+                        <div class="flex items-start justify-between gap-4">
+                            <h3 class="font-extrabold text-slate-800 text-sm tracking-tight leading-snug group-hover:text-badgerRed transition-colors pr-2">${plan}</h3>
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wide bg-slate-50 px-2 py-0.5 rounded-full shrink-0">${count.toLocaleString()} Students</span>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            }
+            stmt.free();
+        }
+
+        // 3. MAJOR VIEW (Dynamic Single-Page Classroom Solver)
+        function loadMajorView(schoolName, planName) {
+            if (!db) return;
+            
+            // Load all students
+            const escPlan = planName.replace(/'/g, "''");
+            const stmt = db.prepare(`SELECT student_id, legal_sex, term_gpa FROM students WHERE academic_plan = '${escPlan}' ORDER BY term_gpa DESC`);
+            
+            activeStudents = [];
+            while(stmt.step()) {
+                activeStudents.push(stmt.getAsObject());
+            }
+            stmt.free();
+
+            filteredStudents = [...activeStudents];
+            renderClassroomSeats();
+        }
+
+        function renderClassroomSeats() {
+            const container = document.getElementById('classroomGridContainer');
+            container.innerHTML = "";
+
+            if (filteredStudents.length === 0) {
+                container.innerHTML = `<div class="text-slate-400 text-xs py-12">No matching seats found.</div>`;
+                return;
+            }
+
+            const N = filteredStudents.length;
+            const workspace = document.getElementById('classroomWorkspace');
+            workspace.scrollLeft = 0;
+            workspace.scrollTop = 0;
+            const W_avail = Math.max(400, workspace.clientWidth - 40);
+            const H_avail = Math.max(300, workspace.clientHeight - 40);
+
+            // Circle absolute size is constant: 22px
+            const seatSize = 22;
+            const gap = 4;
+            const deskPadding = 14;
+
+            // Solve for columns and rows to approximate available workspace aspect ratio
+            const aspect = W_avail / H_avail;
+            let cols = Math.ceil(Math.sqrt(N * aspect));
+            cols = Math.max(1, Math.min(N, cols));
+            let rows = Math.ceil(N / cols);
+
+            // Calculate exact dimensions of the classroom grid
+            const gridW = cols * seatSize + (cols - 1) * gap + deskPadding;
+            const gridH = rows * (seatSize + 12) + (rows - 1) * 12;
+
+            // Set initial scale to fit exactly inside available workspace
+            const scaleX = W_avail / gridW;
+            const scaleY = H_avail / gridH;
+            const initialScale = Math.min(scaleX, scaleY);
+
+            // Apply calculated scale directly (capped at 8.0 maximum to align with zoomClassroom limits)
+            currentScale = Math.min(8.0, initialScale);
+            currentTranslateX = 0;
+            currentTranslateY = 0;
+            applyClassroomTransform();
+
+            // Set container layout gap-3
+            container.className = "flex flex-col items-center justify-center gap-3";
+
+            for (let r = 0; r < rows; r++) {
+                const rowWrapper = document.createElement('div');
+                rowWrapper.className = "flex bg-slate-50 border border-slate-200/50 rounded-xl p-1.5 shadow-sm shrink-0";
+                rowWrapper.style.gap = `${gap}px`;
+
+                const startIdx = r * cols;
+                const endIdx = Math.min(startIdx + cols, N);
+
+                for (let i = startIdx; i < endIdx; i++) {
+                    const student = filteredStudents[i];
+                    const colorClass = student.legal_sex === 'Female' ? 'bg-pink-400 border-pink-500' : 'bg-sky-400 border-sky-500';
+
+                    const seat = document.createElement('button');
+                    seat.className = `rounded-full ${colorClass} border shadow-sm transition-all duration-200 shrink-0 cursor-pointer focus:outline-none hover:scale-125`;
+                    seat.style.width = `${seatSize}px`;
+                    seat.style.height = `${seatSize}px`;
+                    seat.setAttribute('tabindex', '-1');
+                    
+                    // Mouse enter tooltip
+                    seat.onmouseenter = (e) => showTooltip(e, student);
+                    seat.onmouseleave = hideTooltip;
+                    seat.onclick = () => openProfileModal(student.student_id);
+
+                    rowWrapper.appendChild(seat);
+                }
+                container.appendChild(rowWrapper);
+            }
+        }
+
+        // SEARCH
+        function handleSearch() {
+            const val = document.getElementById('globalSearchInput').value.toLowerCase().trim();
+            if (!val) {
+                filteredStudents = [...activeStudents];
+            } else {
+                filteredStudents = activeStudents.filter(s => 
+                    s.student_id.toString().includes(val) || 
+                    s.term_gpa.toFixed(2).includes(val)
+                );
+            }
+            renderClassroomSeats();
+        }
+
+        // TOOLTIP
+        function showTooltip(e, student) {
+            const tooltip = document.getElementById('seatTooltip');
+            document.getElementById('tooltipName').innerText = `Pupil #${student.student_id}`;
+            document.getElementById('tooltipId').innerText = `GPA: ${student.term_gpa.toFixed(2)}`;
+            
+            tooltip.style.opacity = "1";
+            
+            // Position
+            const bounds = e.target.getBoundingClientRect();
+            const workspace = document.getElementById('classroomWorkspace').getBoundingClientRect();
+            
+            tooltip.style.left = `${bounds.left - workspace.left + (bounds.width/2) - (tooltip.offsetWidth/2)}px`;
+            tooltip.style.top = `${bounds.top - workspace.top - tooltip.offsetHeight - 8}px`;
+        }
+
+        function hideTooltip() {
+            const tooltip = document.getElementById('seatTooltip');
+            tooltip.style.opacity = "0";
+        }
+
+        // PAN & ZOOM (SMOOTH & CONTROLLED SENSITIVITY)
+        function zoomClassroom(factor) {
+            currentScale = Math.max(0.1, Math.min(8.0, currentScale * factor));
+            applyClassroomTransform();
+        }
+
+        function resetClassroom() {
+            currentScale = 1.0;
+            currentTranslateX = 0;
+            currentTranslateY = 0;
+            applyClassroomTransform();
+        }
+
+        function applyClassroomTransform() {
+            const wrapper = document.getElementById('seatingChartWrapper');
+            wrapper.style.transform = `translate(-50%, -50%) translate(${currentTranslateX}px, ${currentTranslateY}px) scale(${currentScale})`;
+        }
+
+        function startPan(e) {
+            if (e.target.closest('button')) return; // Ignore button clicks
+            isDragging = true;
+            document.getElementById('classroomWorkspace').className = "flex-1 classroom-grid bg-[#fcfdfe] relative overflow-hidden select-none cursor-grabbing";
+            startX = e.clientX - currentTranslateX;
+            startY = e.clientY - currentTranslateY;
+            
+            document.addEventListener('mousemove', handlePan);
+            document.addEventListener('mouseup', stopPan);
+        }
+
+        function handlePan(e) {
+            if (!isDragging) return;
+            currentTranslateX = e.clientX - startX;
+            currentTranslateY = e.clientY - startY;
+            applyClassroomTransform();
+        }
+
+        function stopPan() {
+            isDragging = false;
+            document.getElementById('classroomWorkspace').className = "flex-1 classroom-grid bg-[#fcfdfe] relative overflow-hidden select-none cursor-grab";
+            document.removeEventListener('mousemove', handlePan);
+            document.removeEventListener('mouseup', stopPan);
+        }
+
+        // SMOOTH WHEEL SENSITIVITY ZOOM
+        document.getElementById('classroomWorkspace').addEventListener('wheel', (e) => {
+            e.preventDefault();
+            // Moderate scaling steps to prevent jumping
+            const factor = e.deltaY < 0 ? 1.05 : 0.95;
+            zoomClassroom(factor);
+        }, { passive: false });
+
+
+        // MODAL (STUDENT PROFILE)
+        function openProfileModal(studentId) {
+            if (!db) return;
+            const modal = document.getElementById('profileModal');
+            
+            // Get student
+            const stmt = db.prepare(`SELECT * FROM students WHERE student_id = ${studentId}`);
+            if (!stmt.step()) {
+                stmt.free();
+                return;
+            }
+            const s = stmt.getAsObject();
+            stmt.free();
+
+            // Set demographics badge values
+            document.getElementById('modalName').innerText = `Pupil #${s.student_id}`;
+            document.getElementById('modalId').innerText = `ID: #UW${s.student_id}`;
+            document.getElementById('modalGPA').innerText = s.term_gpa.toFixed(2);
+            document.getElementById('modalStdCredits').innerText = s.standard_assigned_credits;
+            document.getElementById('modalVirCredits').innerText = s.virtual_credits;
+            document.getElementById('modalStanding').innerText = s.academic_level;
+
+            // Details
+            document.getElementById('modalSchool').innerText = s.plan_school_college;
+            document.getElementById('modalPlan').innerText = s.academic_plan;
+            document.getElementById('modalLevel').innerText = s.student_level;
+            
+            document.getElementById('modalSex').innerText = s.legal_sex;
+            document.getElementById('modalRace').innerText = s.race_ethnicity === 'Intl.' ? 'International' : s.race_ethnicity;
+            document.getElementById('modalResidency').innerText = s.wi_residency || 'N/A';
+            document.getElementById('modalCitizenship').innerText = s.us_citizen || 'N/A';
+            document.getElementById('modalAge').innerText = s.age_group;
+
+            document.getElementById('modalAdmit').innerText = s.term_admit_type || 'N/A';
+            document.getElementById('modalRegType').innerText = s.home_region_type || 'N/A';
+            document.getElementById('modalLoc').innerText = (s.home_location || 'N/A') + (s.home_region_type === 'WI County' ? ' County' : '');
+            
+
+            document.getElementById('modalInstCode').innerText = s.origin_institution_code || 'N/A';
+            document.getElementById('modalInstName').innerText = s.origin_institution_name || 'N/A';
+            document.getElementById('modalInstLoc').innerText = (!s.origin_institution_city || s.origin_institution_city === 'N/A') ? 'N/A' : `${s.origin_institution_city}, ${s.origin_institution_state}`;
+
+            // Avatar styling
+            const av = document.getElementById('modalAvatar');
+            if (s.legal_sex === 'Female') {
+                av.className = "w-11 h-11 rounded-xl bg-pink-50 text-pink-500 flex items-center justify-center text-xl shadow-sm";
+                av.innerHTML = `<i class="fa-solid fa-venus"></i>`;
+            } else {
+                av.className = "w-11 h-11 rounded-xl bg-sky-50 text-sky-500 flex items-center justify-center text-xl shadow-sm";
+                av.innerHTML = `<i class="fa-solid fa-mars"></i>`;
+            }
+
+            // Transcript courses
+            const transBody = document.getElementById('modalTranscriptBody');
+            transBody.innerHTML = "";
+
+            const transStmt = db.prepare(`SELECT * FROM enrollments WHERE student_id = ${studentId} ORDER BY is_virtual, subject, course_num`);
+            while(transStmt.step()) {
+                const r = transStmt.getAsObject();
+                const row = document.createElement('tr');
+                row.className = "border-b border-slate-50 hover:bg-slate-50/50 transition-colors";
+                
+                let codeCell = "";
+                let gradeClass = "bg-slate-100 text-slate-700";
+                
+                if (r.is_virtual) {
+                    codeCell = `<span class="px-1.5 py-0.5 rounded bg-amber-50 text-amber-600 text-[10px] font-bold border border-amber-100">VIR</span>`;
+                    gradeClass = "bg-emerald-50 text-emerald-600 border border-emerald-100";
+                } else {
+                    codeCell = `<span class="font-mono text-slate-500 font-semibold">${r.subject.split(' ')[0]}-${r.course_num}</span>`;
+                    
+                    if (['A', 'AB'].includes(r.grade)) {
+                        gradeClass = "bg-emerald-50 text-emerald-600 border border-emerald-100";
+                    } else if (['B', 'BC'].includes(r.grade)) {
+                        gradeClass = "bg-sky-50 text-sky-600 border border-sky-100";
+                    } else if (['C', 'D'].includes(r.grade)) {
+                        gradeClass = "bg-amber-50 text-amber-600 border border-amber-100";
+                    } else if (r.grade === 'F') {
+                        gradeClass = "bg-rose-50 text-rose-600 border border-rose-100";
+                    }
+                }
+                
+                row.innerHTML = `
+                    <td class="py-3">${codeCell}</td>
+                    <td class="py-3 font-semibold text-slate-800">${r.course_title}</td>
+                    <td class="py-3 text-slate-400 font-mono">${r.section_num}</td>
+                    <td class="py-3 text-center text-slate-500 font-semibold">${r.credits}</td>
+                    <td class="py-3 text-center">
+                        <span class="px-2 py-0.5 rounded-full text-[9px] font-bold uppercase border ${gradeClass}">${r.grade}</span>
+                    </td>
+                `;
+                transBody.appendChild(row);
+            }
+            transStmt.free();
+
+            // Open modal animate
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.firstElementChild.classList.remove('scale-95');
+            }, 10);
+        }
+
+        function closeModal(e) {
+            const modal = document.getElementById('profileModal');
+            modal.classList.add('opacity-0');
+            modal.firstElementChild.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+    </script>
+</body>
+</html>

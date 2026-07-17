@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pdf
+scratch/
+.system_generated/
+*.log
+
+
+AGENTS.md
+GEMINI.md
+
+data/*.pdf
+tmpdata/
+move_data.sh
+
+.DS_Store
+

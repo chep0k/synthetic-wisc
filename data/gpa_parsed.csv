@@ -1,0 +1,204 @@
+gender,school,program,is_school_total,freshman_count,freshman_gpa,sophomore_count,sophomore_gpa,junior_count,junior_gpa,senior_count,senior_gpa,total_count,total_gpa
+Total,Agricultural and Life Sciences,Agricultural and Life Sciences,True,475,3.239,890,3.367,952,3.361,1307,3.482,3624,3.389
+Total,Agricultural and Life Sciences,Agricultural & Life Sciences,False,439,3.249,819,3.366,846,3.380,1167,3.509,3271,3.404
+Total,Agricultural and Life Sciences,Agricultural Business Mgmt,False,9,3.254,,3.130,14,3.458,16,3.350,46,3.334
+Total,Agricultural and Life Sciences,Biological Systems Engineering,False,13,2.858,28,3.450,48,3.167,76,3.024,165,3.126
+Total,Agricultural and Life Sciences,Dietetics,False,14,3.303,36,3.361,44,3.190,48,3.615,142,3.382
+Total,Business,Business,True,296,3.497,849,3.513,1128,3.465,1366,3.538,3639,3.506
+Total,Business,Business Online,False,,,19,3.054,57,3.337,68,3.470,144,3.361
+Total,Business,Business Undergraduate,False,296,3.497,830,3.520,1071,3.469,1298,3.540,3495,3.509
+Total,Education,Education,True,398,3.540,574,3.555,668,3.660,782,3.706,2422,3.630
+Total,Education,Art,False,39,3.629,51,3.713,67,3.712,93,3.670,250,3.684
+Total,Education,Art Education,False,,,,2,12,3.536,13,3.733,27,3.649
+Total,Education,Bachelor of Fine Arts,False,,,,,2,,18,3.913,20,3.920
+Total,Education,Bachelor of Fine Arts - Dance,False,1,,,3,6,3.827,2,,12,3.841
+Total,Education,Bachelor of Science - Dance,False,22,3.690,17,3.709,11,3.702,16,3.724,66,3.706
+Total,Education,Educational Policy Studies,False,20,3.403,34,3.594,47,3.499,32,3.806,133,3.579
+Total,Education,Elementary Education,False,,,,2,122,3.903,164,3.834,288,3.866
+Total,Education,Health Promo and Health Equity,False,12,3.327,44,3.474,121,3.643,123,3.630,300,3.601
+Total,Education,Kinesiology,False,,,,,102,3.600,206,3.661,308,3.641
+Total,Education,Kines-Pre-Exer/Pre-Mtr Behvr,False,134,3.429,208,3.399,90,3.390,12,3.467,444,3.408
+Total,Education,Phy Ed - Pre-Phy Ed Tchr Prep,False,5,,,2,,,,,7,3.511
+Total,Education,Physical Education,False,,,,3.298,8,3.291,13,3.494,30,3.382
+Total,Education,Pre-Art Education,False,8,3.671,,3.643,4,,,,21,3.674
+Total,Education,Pre-ElemEdu Spec Edu,False,21,3.813,28,3.703,4,,,,53,3.753
+Total,Education,Pre-Elementary Education,False,96,3.596,116,3.669,16,3.739,1,,229,3.640
+Total,Education,Pre-Special Educ & Rehab Psy,False,8,3.727,,4,2,,,,14,3.680
+Total,Education,Rehabilitation Psychology,False,24,3.548,32,3.668,29,3.714,57,3.749,142,3.689
+Total,Education,Secondary Education,False,,,,,,,1,,1,
+Total,Education,Special Education,False,,,,,7,3.731,14,3.766,21,3.753
+Total,Education,Theatre & Drama,False,8,3.423,13,3.534,18,3.728,17,3.544,56,3.591
+Total,Engineering,Engineering,True,541,3.274,1370,3.340,1259,3.360,2064,3.510,5234,3.404
+Total,Engineering,Biomedical Engineering,False,80,3.336,211,3.373,166,3.399,248,3.641,705,3.470
+Total,Engineering,Chemical Engineering,False,56,3.336,144,3.369,114,3.278,192,3.330,506,3.330
+Total,Engineering,Civil & Environmental Engrg,False,32,3.173,89,3.338,91,3.291,155,3.467,367,3.368
+Total,Engineering,Computer Engineering,False,42,3.278,131,3.394,138,3.421,247,3.546,558,3.457
+Total,Engineering,Electrical Engineering,False,45,3.184,137,3.386,135,3.366,256,3.460,573,3.398
+Total,Engineering,Engineering Mechanics,False,29,3.197,62,3.414,52,3.142,85,3.295,228,3.281
+Total,Engineering,Engineering Physics,False,3,,20,3.375,13,3.568,18,3.597,54,3.505
+Total,Engineering,Engineering Undecided,False,20,3.211,28,3.304,6,3.198,1,,55,3.271
+Total,Engineering,Environmental Engineering,False,24,3.171,30,3.243,43,3.347,66,3.630,163,3.423
+Total,Engineering,Geological Engineering,False,3,,,3,5,,11,3.641,22,3.494
+Total,Engineering,Industrial Engineering,False,27,3.314,61,3.385,100,3.495,157,3.646,345,3.530
+Total,Engineering,Materials Science and Engr,False,6,3.233,17,3.500,20,3.202,42,3.538,85,3.427
+Total,Engineering,Mechanical Engineering,False,159,3.291,390,3.273,342,3.364,543,3.499,1434,3.381
+Total,Engineering,Nuclear Engineering,False,15,3.271,47,3.293,34,3.263,43,3.439,139,3.325
+Total,Engineering,University,False,,of,Wisconsin,,Madison,,,,,
+Total,Human Ecology,Human Ecology,True,306,3.524,598,3.518,710,3.571,837,3.621,2451,3.568
+Total,Human Ecology,Human Ecology,False,227,3.575,414,3.543,482,3.574,576,3.617,1699,3.580
+Total,Human Ecology,Human Ecology Online,False,,,,,2,,9,3.786,11,3.813
+Total,Human Ecology,Interior Architecture,False,1,,16,3.847,29,3.909,37,3.914,83,3.890
+Total,Human Ecology,Personal Finance,False,56,3.366,145,3.380,166,3.485,187,3.557,554,3.469
+Total,Human Ecology,Textiles and Fashion Design,False,22,3.416,23,3.655,31,3.636,28,3.687,104,3.605
+Total,Letters and Science,Letters and Science,True,2351,3.417,4468,3.447,5024,3.460,6434,3.573,18277,3.490
+Total,Letters and Science,Applied Math & Engr Physics,False,,,,3,18,3.398,37,3.291,58,3.337
+Total,Letters and Science,General Course - BA Degree,False,1285,3.478,1898,3.489,1812,3.488,2029,3.588,7024,3.515
+Total,Letters and Science,General Course - BS Degree,False,1052,3.339,2465,3.403,2949,3.421,3993,3.549,10459,3.456
+Total,Letters and Science,Journalism - BA Degree,False,,,62,3.762,192,3.717,235,3.775,489,3.750
+Total,Letters and Science,Journalism - BS Degree,False,,,,3,10,3.725,19,3.758,32,3.754
+Total,Letters and Science,Landscape Architecture,False,,,,3.650,25,3.489,41,3.535,74,3.531
+Total,Letters and Science,Letters & Science Online,False,,,,,,,1,,1,
+Total,Letters and Science,Music,False,6,3.572,11,3.703,9,3.908,13,3.719,39,3.739
+Total,Letters and Science,Music Cert Prog,False,8,3.912,18,3.781,9,3.798,25,3.902,60,3.851
+Total,Letters and Science,Social Work,False,,,,,,,41,3.811,41,3.811
+Total,Nursing,Nursing,True,203,3.241,321,3.436,224,3.480,352,3.581,1100,3.445
+Total,Nursing,Nursing Accelerated,False,,,,,,,64,3.549,64,3.549
+Total,Nursing,Nursing Collaborative Program,False,,,,,2,,43,3.867,45,3.856
+Total,Nursing,Nursing Undergraduate,False,,,,,100,3.509,229,3.563,329,3.544
+Total,Nursing,Pre-Nursing,False,203,3.241,321,3.436,122,3.457,16,3.615,662,3.385
+Total,Pharmacy,Pharmacy,True,,,,,12,3.783,28,3.741,40,3.754
+Total,Pharmacy,Pharmacology & Toxicology,False,,,,,12,3.783,28,3.741,40,3.754
+Men,Agricultural and Life Sciences,Agricultural and Life Sciences,True,115,3.048,235,3.377,297,3.320,402,3.423,1049,3.341
+Men,Agricultural and Life Sciences,Agricultural & Life Sciences,False,98,3.074,210,3.382,253,3.357,343,3.480,904,3.377
+Men,Agricultural and Life Sciences,Agricultural Business Mgmt,False,7,3.225,,4,10,3.425,8,3.413,29,3.276
+Men,Agricultural and Life Sciences,Biological Systems Engineering,False,9,2.686,14,3.497,30,3.030,43,2.933,96,3.023
+Men,Agricultural and Life Sciences,Dietetics,False,1,,,3.354,4,,8,3.582,20,3.312
+Men,Business,Business,True,186,3.469,491,3.506,659,3.465,729,3.509,2065,3.490
+Men,Business,Business Online,False,,,,3.513,31,3.268,29,3.414,68,3.359
+Men,Business,Business Undergraduate,False,186,3.469,483,3.506,628,3.472,700,3.512,1997,3.494
+Men,Education,Education,True,88,3.420,129,3.334,138,3.509,172,3.595,527,3.480
+Men,Education,Art,False,11,3.582,10,3.648,12,3.582,15,3.295,48,3.508
+Men,Education,Art Education,False,,,,1,2,,1,,4,
+Men,Education,Bachelor of Fine Arts,False,,,,,1,,3,,4,
+Men,Education,Bachelor of Science - Dance,False,1,,,,1,,3,,5,
+Men,Education,Educational Policy Studies,False,8,3.307,17,3.439,13,3.258,7,3.672,45,3.399
+Men,Education,Elementary Education,False,,,,1,8,3.665,19,3.808,28,3.761
+Men,Education,Health Promo and Health Equity,False,2,,,3.225,19,3.511,23,3.506,51,3.462
+Men,Education,Kinesiology,False,,,,,31,3.603,71,3.633,102,3.624
+Men,Education,Kines-Pre-Exer/Pre-Mtr Behvr,False,45,3.331,61,3.295,30,3.373,7,3.457,143,3.331
+Men,Education,Phy Ed - Pre-Phy Ed Tchr Prep,False,4,,,2,,,,,6,3.560
+Men,Education,Physical Education,False,,,,3.219,5,,10,3.500,21,3.369
+Men,Education,Pre-ElemEdu Spec Edu,False,3,,,,,,,,3,
+Men,Education,Pre-Elementary Education,False,10,3.500,17,3.155,3,,,,30,3.331
+Men,Education,Pre-Special Educ & Rehab Psy,False,1,,,1,1,,,,3,
+Men,Education,Rehabilitation Psychology,False,,,,1,4,,5,,10,3.658
+Men,Education,Special Education,False,,,,,2,,2,,4,
+Men,Education,Theatre & Drama,False,3,,,5,6,3.663,6,3.615,20,3.570
+Men,Engineering,Engineering,True,381,3.246,998,3.352,886,3.352,1479,3.492,3744,3.396
+Men,Engineering,Biomedical Engineering,False,31,3.260,99,3.373,82,3.417,120,3.639,332,3.470
+Men,Engineering,Chemical Engineering,False,37,3.372,85,3.388,66,3.247,126,3.345,314,3.338
+Men,Engineering,Civil & Environmental Engrg,False,23,3.166,65,3.344,58,3.223,93,3.466,239,3.346
+Men,Engineering,Computer Engineering,False,36,3.251,122,3.417,116,3.415,209,3.531,483,3.451
+Men,Engineering,Electrical Engineering,False,36,3.135,113,3.357,101,3.392,213,3.464,463,3.396
+Men,Engineering,Engineering Mechanics,False,24,3.201,51,3.433,40,3.158,70,3.342,185,3.310
+Men,Engineering,Engineering Physics,False,2,,16,3.398,10,3.518,18,3.597,46,3.514
+Men,Engineering,Engineering Undecided,False,10,2.978,16,3.267,2,,1,,29,3.187
+Men,Engineering,Environmental Engineering,False,12,3.024,12,3.178,17,3.232,20,3.535,61,3.285
+Men,Engineering,Geological Engineering,False,2,,,1,1,,3,,7,3.353
+Men,Engineering,Industrial Engineering,False,18,3.278,39,3.437,67,3.496,92,3.609,216,3.515
+Men,Engineering,Materials Science and Engr,False,4,,10,3.386,12,3.220,28,3.570,54,3.430
+Men,Engineering,Mechanical Engineering,False,135,3.286,330,3.298,284,3.359,453,3.479,1202,3.378
+Men,Engineering,Nuclear Engineering,False,11,3.300,39,3.332,30,3.259,33,3.477,113,3.347
+Men,Human Ecology,Human Ecology,True,66,3.332,182,3.365,233,3.417,249,3.457,730,3.409
+Men,Human Ecology,University,False,,of,Wisconsin,,Madison,,,,,
+Men,Human Ecology,Human Ecology,False,25,3.389,71,3.364,100,3.369,110,3.407,306,3.382
+Men,Human Ecology,Human Ecology Online,False,,,,,2,,6,3.786,8,3.826
+Men,Human Ecology,Interior Architecture,False,,,,2,2,,5,,9,3.962
+Men,Human Ecology,Personal Finance,False,36,3.275,103,3.341,124,3.447,122,3.467,385,3.409
+Men,Human Ecology,Textiles and Fashion Design,False,5,,,3.582,5,,6,3.636,22,3.500
+Men,Letters and Science,Letters and Science,True,874,3.332,1949,3.375,2501,3.410,3268,3.509,8592,3.430
+Men,Letters and Science,Applied Math & Engr Physics,False,,,,3,16,3.464,35,3.293,54,3.358
+Men,Letters and Science,General Course - BA Degree,False,426,3.386,706,3.371,683,3.384,816,3.497,2631,3.415
+Men,Letters and Science,General Course - BS Degree,False,440,3.274,1215,3.371,1744,3.413,2325,3.512,5724,3.432
+Men,Letters and Science,Journalism - BA Degree,False,,,10,3.669,42,3.633,52,3.613,104,3.627
+Men,Letters and Science,Journalism - BS Degree,False,,,,1,1,,8,3.668,10,3.567
+Men,Letters and Science,Landscape Architecture,False,,,,1,7,3.234,15,3.378,23,3.323
+Men,Letters and Science,Music,False,4,,,3,6,3.879,6,3.543,19,3.637
+Men,Letters and Science,Music Cert Prog,False,4,,10,3.679,2,,9,3.836,25,3.753
+Men,Letters and Science,Social Work,False,,,,,,,2,,2,
+Men,Nursing,Nursing,True,24,3.412,48,3.427,26,3.280,54,3.518,152,3.427
+Men,Nursing,Nursing Accelerated,False,,,,,,,8,3.626,8,3.626
+Men,Nursing,Nursing Collaborative Program,False,,,,,,,7,3.969,7,3.969
+Men,Nursing,Nursing Undergraduate,False,,,,,11,3.396,33,3.333,44,3.351
+Men,Nursing,Pre-Nursing,False,24,3.412,48,3.427,15,3.202,6,3.803,93,3.412
+Men,Pharmacy,Pharmacy,True,,,,,6,3.835,4,,10,3.865
+Men,Pharmacy,Pharmacology & Toxicology,False,,,,,6,3.835,4,,10,3.865
+Women,Agricultural and Life Sciences,Agricultural and Life Sciences,True,360,3.300,655,3.364,655,3.380,905,3.507,2575,3.409
+Women,Agricultural and Life Sciences,Agricultural & Life Sciences,False,341,3.298,609,3.361,593,3.389,824,3.520,2367,3.414
+Women,Agricultural and Life Sciences,Agricultural Business Mgmt,False,2,,,3,4,,8,3.282,17,3.436
+Women,Agricultural and Life Sciences,Biological Systems Engineering,False,4,,14,3.404,18,3.397,33,3.128,69,3.259
+Women,Agricultural and Life Sciences,Dietetics,False,13,3.335,29,3.362,40,3.215,40,3.620,122,3.393
+Women,Business,Business,True,110,3.544,358,3.521,469,3.464,637,3.571,1574,3.525
+Women,Business,Business Online,False,,,11,2.668,26,3.442,39,3.517,76,3.362
+Women,Business,Business Undergraduate,False,110,3.544,347,3.538,443,3.465,598,3.573,1498,3.530
+Women,Education,Education,True,310,3.574,445,3.616,530,3.697,610,3.737,1895,3.671
+Women,Education,Art,False,28,3.647,41,3.729,55,3.740,78,3.742,202,3.726
+Women,Education,Art Education,False,,,,1,10,3.520,12,3.727,23,3.636
+Women,Education,Bachelor of Fine Arts,False,,,,,1,,15,3.923,16,3.927
+Women,Education,Bachelor of Fine Arts - Dance,False,1,,,3,6,3.827,2,,12,3.841
+Women,Education,Bachelor of Science - Dance,False,21,3.697,17,3.709,10,3.709,13,3.700,61,3.703
+Women,Education,Educational Policy Studies,False,12,3.464,17,3.737,34,3.587,25,3.845,88,3.669
+Women,Education,Elementary Education,False,,,,1,114,3.918,145,3.838,260,3.877
+Women,Education,Health Promo and Health Equity,False,10,3.325,37,3.526,102,3.666,100,3.660,249,3.631
+Women,Education,Kinesiology,False,,,,,71,3.599,135,3.676,206,3.649
+Women,Education,Kines-Pre-Exer/Pre-Mtr Behvr,False,89,3.478,147,3.440,60,3.399,5,,301,3.443
+Women,Education,Phy Ed - Pre-Phy Ed Tchr Prep,False,1,,,,,,,,1,
+Women,Education,Physical Education,False,,,,3,3,,3,,9,3.413
+Women,Education,Pre-Art Education,False,8,3.671,,3.643,4,,,,21,3.674
+Women,Education,Pre-ElemEdu Spec Edu,False,18,3.840,28,3.703,4,,,,50,3.759
+Women,Education,Pre-Elementary Education,False,86,3.608,99,3.755,13,3.722,1,,199,3.686
+Women,Education,Pre-Special Educ & Rehab Psy,False,7,3.758,,3,1,,,,11,3.707
+Women,Education,Rehabilitation Psychology,False,24,3.548,31,3.669,25,3.709,52,3.766,132,3.692
+Women,Education,Secondary Education,False,,,,,,,1,,1,
+Women,Education,Special Education,False,,,,,5,,12,3.804,17,3.854
+Women,Education,Theatre & Drama,False,5,,,3.703,12,3.761,11,3.492,36,3.604
+Women,Engineering,Engineering,True,160,3.340,372,3.310,373,3.379,585,3.552,1490,3.425
+Women,Engineering,Biomedical Engineering,False,49,3.383,112,3.373,84,3.382,128,3.642,373,3.470
+Women,Engineering,Chemical Engineering,False,19,3.264,59,3.343,48,3.322,66,3.302,192,3.317
+Women,Engineering,Civil & Environmental Engrg,False,9,3.193,24,3.322,33,3.414,62,3.468,128,3.409
+Women,Engineering,Computer Engineering,False,6,3.440,,3.064,22,3.452,38,3.634,75,3.494
+Women,Engineering,Electrical Engineering,False,9,3.386,24,3.519,34,3.291,43,3.437,110,3.405
+Women,Engineering,Engineering Mechanics,False,5,,11,3.329,12,3.091,15,3.061,43,3.159
+Women,Engineering,Engineering Physics,False,1,,,4,3,,,,8,3.455
+Women,Engineering,Engineering Undecided,False,10,3.424,12,3.352,4,,,,26,3.361
+Women,Engineering,Environmental Engineering,False,12,3.323,18,3.284,26,3.421,46,3.670,102,3.502
+Women,Engineering,Geological Engineering,False,1,,,2,4,,8,3.738,15,3.554
+Women,Engineering,Industrial Engineering,False,9,3.385,22,3.289,33,3.494,65,3.700,129,3.554
+Women,Engineering,Materials Science and Engr,False,2,,,3.654,8,3.178,14,3.474,31,3.423
+Women,Engineering,University,False,,of,Wisconsin,,Madison,,,,,
+Women,Engineering,Mechanical Engineering,False,24,3.320,60,3.139,58,3.392,90,3.604,232,3.396
+Women,Engineering,Nuclear Engineering,False,4,,,3.092,4,,10,3.328,26,3.230
+Women,Human Ecology,Human Ecology,True,240,3.575,416,3.582,477,3.643,588,3.684,1721,3.633
+Women,Human Ecology,Human Ecology,False,202,3.597,343,3.579,382,3.626,466,3.662,1393,3.622
+Women,Human Ecology,Human Ecology Online,False,,,,,,,3,,3,
+Women,Human Ecology,Interior Architecture,False,1,,14,3.833,27,3.910,32,3.903,74,3.883
+Women,Human Ecology,Personal Finance,False,20,3.516,42,3.471,42,3.596,65,3.717,169,3.600
+Women,Human Ecology,Textiles and Fashion Design,False,17,3.409,17,3.679,26,3.692,22,3.697,82,3.631
+Women,Letters and Science,Letters and Science,True,1477,3.467,2519,3.503,2523,3.508,3166,3.636,9685,3.542
+Women,Letters and Science,Applied Math & Engr Physics,False,,,,,2,,2,,4,
+Women,Letters and Science,General Course - BA Degree,False,859,3.523,1192,3.557,1129,3.551,1213,3.648,4393,3.573
+Women,Letters and Science,General Course - BS Degree,False,612,3.387,1250,3.433,1205,3.432,1668,3.598,4735,3.484
+Women,Letters and Science,Journalism - BA Degree,False,,,52,3.781,150,3.740,183,3.820,385,3.782
+Women,Letters and Science,Journalism - BS Degree,False,,,,2,9,3.813,11,3.819,22,3.833
+Women,Letters and Science,Landscape Architecture,False,,,,3.704,18,3.582,26,3.617,51,3.616
+Women,Letters and Science,Letters & Science Online,False,,,,,,,1,,1,
+Women,Letters and Science,Music,False,2,,,3.857,3,,7,3.888,20,3.840
+Women,Letters and Science,Music Cert Prog,False,4,,,3.907,7,3.847,16,3.938,35,3.918
+Women,Letters and Science,Social Work,False,,,,,,,39,3.836,39,3.836
+Women,Nursing,Nursing,True,179,3.217,273,3.438,198,3.505,298,3.592,948,3.448
+Women,Nursing,Nursing Accelerated,False,,,,,,,56,3.539,56,3.539
+Women,Nursing,Nursing Collaborative Program,False,,,,,2,,36,3.836,38,3.825
+Women,Nursing,Nursing Undergraduate,False,,,,,89,3.522,196,3.599,285,3.572
+Women,Nursing,Pre-Nursing,False,179,3.217,273,3.438,107,3.491,10,3.515,569,3.380
+Women,Pharmacy,Pharmacy,True,,,,,6,3.728,24,3.713,30,3.716
+Women,Pharmacy,Pharmacology & Toxicology,False,,,,,6,3.728,24,3.713,30,3.716
