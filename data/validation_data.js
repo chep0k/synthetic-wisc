@@ -392,10 +392,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.69
+                "avg": 3.71
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -490,7 +490,7 @@ window.validationData = {
                 "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -585,7 +585,7 @@ window.validationData = {
                 "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -691,10 +691,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.73
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -808,10 +808,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -927,10 +927,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.33
               },
               "accuracy": 100.0
             }
@@ -1036,10 +1036,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.69
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -1149,10 +1149,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -1256,10 +1256,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.69
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -1351,10 +1351,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -1458,10 +1458,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.74
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -1563,10 +1563,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.25
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -1684,10 +1684,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.64
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -1791,10 +1791,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.78
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -1902,10 +1902,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.9
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -2009,10 +2009,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.63
+                "avg": 3.65
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -2104,10 +2104,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -2202,7 +2202,7 @@ window.validationData = {
                 "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -2315,7 +2315,7 @@ window.validationData = {
                 "avg": 3.74
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -2437,10 +2437,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -2532,10 +2532,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.67
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -2647,10 +2647,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.62
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -2764,10 +2764,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.73
+                "avg": 2.9
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.13
               },
               "accuracy": 100.0
             }
@@ -2875,10 +2875,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.87
+                "avg": 3.23
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.13
               },
               "accuracy": 100.0
             }
@@ -2982,10 +2982,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -3107,10 +3107,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.59
+                "avg": 3.64
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -3216,10 +3216,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.74
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.51
               },
               "accuracy": 100.0
             }
@@ -3323,10 +3323,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.87
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -3438,10 +3438,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.56
+                "avg": 3.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -3553,10 +3553,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.62
+                "avg": 3.71
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -3654,10 +3654,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.94
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -3757,10 +3757,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.69
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -3858,10 +3858,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.85
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -3965,10 +3965,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -4074,10 +4074,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.81
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -4187,10 +4187,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.56
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -4304,10 +4304,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -4409,10 +4409,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.59
+                "avg": 3.87
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -4520,10 +4520,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.7
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -4637,10 +4637,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.67
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -4738,10 +4738,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.59
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -4851,10 +4851,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -4970,10 +4970,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -5079,10 +5079,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.64
+                "avg": 3.69
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -5188,10 +5188,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -5297,10 +5297,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -5406,10 +5406,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.68
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -5507,10 +5507,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -5608,10 +5608,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 2.55
+                "avg": 3.73
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -5719,10 +5719,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.69
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -5842,10 +5842,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.59
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -5945,10 +5945,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.54
+                "avg": 2.96
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -6058,10 +6058,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.7
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -6173,10 +6173,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.64
+                "avg": 3.67
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -6286,10 +6286,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.54
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -6409,10 +6409,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -6535,7 +6535,7 @@ window.validationData = {
                 "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -6643,10 +6643,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.62
+                "avg": 3.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -6744,10 +6744,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.67
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -6867,10 +6867,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.63
+                "avg": 3.74
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -6984,10 +6984,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.67
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -7103,10 +7103,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.66
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -7216,10 +7216,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.64
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -7317,10 +7317,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.78
+                "avg": 3.35
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -7412,10 +7412,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -7535,10 +7535,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.65
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -7630,10 +7630,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.69
+                "avg": 3.81
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -7725,10 +7725,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.75
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -7840,10 +7840,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.62
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -7961,10 +7961,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.66
+                "avg": 3.64
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -8060,10 +8060,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.17
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -8171,10 +8171,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.66
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -8292,10 +8292,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.59
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -8405,10 +8405,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -8506,10 +8506,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.74
+                "avg": 3.64
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -8604,7 +8604,7 @@ window.validationData = {
                 "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -8710,10 +8710,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.75
+                "avg": 3.69
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -8821,10 +8821,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.64
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -8928,10 +8928,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -9034,7 +9034,7 @@ window.validationData = {
                 "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -9136,10 +9136,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.81
+                "avg": 3.79
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -9245,10 +9245,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -9346,10 +9346,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -9459,10 +9459,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.66
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -9570,10 +9570,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.75
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -9687,10 +9687,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.65
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -9788,10 +9788,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.72
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -9891,10 +9891,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 2.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -9990,10 +9990,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.88
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -10097,10 +10097,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.67
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -10206,10 +10206,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.62
+                "avg": 3.32
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -10327,10 +10327,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.67
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -10422,10 +10422,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.25
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -10531,10 +10531,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.67
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -10644,10 +10644,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.71
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -10902,10 +10902,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -11019,10 +11019,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.53
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -11126,10 +11126,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.17
+                "avg": 3.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -11240,7 +11240,7 @@ window.validationData = {
                 "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -11344,10 +11344,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.23
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -11449,10 +11449,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.54
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -11575,7 +11575,7 @@ window.validationData = {
                 "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -11679,10 +11679,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.63
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -11792,10 +11792,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -11911,10 +11911,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -12028,10 +12028,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -12145,10 +12145,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -12264,10 +12264,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -12371,10 +12371,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -12498,10 +12498,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -12613,10 +12613,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -12720,10 +12720,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -12839,10 +12839,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -12956,10 +12956,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -13077,10 +13077,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -13184,10 +13184,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -13301,10 +13301,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.53
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -13410,10 +13410,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -13531,10 +13531,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -13659,7 +13659,7 @@ window.validationData = {
                 "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -13769,10 +13769,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.56
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -13890,10 +13890,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -14005,10 +14005,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -14130,10 +14130,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.48
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -14243,10 +14243,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -14358,10 +14358,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -14481,10 +14481,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -14588,10 +14588,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -14709,10 +14709,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.48
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -14810,10 +14810,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.2
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -14917,10 +14917,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.68
+                "avg": 3.37
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -15026,10 +15026,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.31
+                "avg": 3.88
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -15139,10 +15139,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.69
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.51
               },
               "accuracy": 100.0
             }
@@ -15260,10 +15260,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.48
+                "avg": 3.69
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.51
               },
               "accuracy": 100.0
             }
@@ -15373,10 +15373,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.71
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.51
               },
               "accuracy": 100.0
             }
@@ -15480,10 +15480,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.75
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.51
               },
               "accuracy": 100.0
             }
@@ -15591,10 +15591,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.61
+                "avg": 3.77
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.51
               },
               "accuracy": 100.0
             }
@@ -15704,10 +15704,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.73
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.51
               },
               "accuracy": 100.0
             }
@@ -15821,10 +15821,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.67
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.51
               },
               "accuracy": 100.0
             }
@@ -15938,10 +15938,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.51
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -16051,10 +16051,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -16172,10 +16172,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -16291,10 +16291,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.53
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.51
               },
               "accuracy": 100.0
             }
@@ -16410,10 +16410,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -16519,10 +16519,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -16632,10 +16632,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.27
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -16747,10 +16747,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.56
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.51
               },
               "accuracy": 100.0
             }
@@ -17011,10 +17011,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -17122,10 +17122,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -17235,10 +17235,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.32
+                "avg": 3.37
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -17334,10 +17334,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.18
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -17445,10 +17445,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -17546,10 +17546,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.25
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -17655,10 +17655,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -17768,10 +17768,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.24
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -17881,10 +17881,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.23
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -18000,10 +18000,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -18117,10 +18117,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -18234,10 +18234,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.45
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -18343,10 +18343,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -18595,10 +18595,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.81
+                "avg": 3.97
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -18716,10 +18716,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.78
+                "avg": 3.93
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -18825,10 +18825,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.82
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.65
               },
               "accuracy": 100.0
             }
@@ -18944,10 +18944,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.64
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -19055,10 +19055,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.82
+                "avg": 3.88
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -19150,10 +19150,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 2.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -19271,10 +19271,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.92
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -19384,10 +19384,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.73
+                "avg": 3.92
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -19501,10 +19501,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.64
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -19608,10 +19608,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.73
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -19707,10 +19707,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.75
+                "avg": 3.69
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -19822,10 +19822,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -19917,10 +19917,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 2.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -20032,10 +20032,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -20149,10 +20149,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.7
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -20244,10 +20244,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.75
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -20353,10 +20353,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.88
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -20472,10 +20472,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.74
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -20593,10 +20593,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.65
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -20694,10 +20694,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.88
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -20807,10 +20807,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.82
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.84
               },
               "accuracy": 100.0
             }
@@ -20904,10 +20904,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.93
+                "avg": 3.84
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -20999,10 +20999,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.88
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -21114,10 +21114,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.85
+                "avg": 3.82
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -21237,10 +21237,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -21354,10 +21354,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.73
+                "avg": 3.91
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -21449,10 +21449,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -21544,10 +21544,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -21649,10 +21649,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -21766,10 +21766,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.72
+                "avg": 3.73
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -21887,10 +21887,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.82
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -21994,10 +21994,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -22113,10 +22113,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.77
+                "avg": 3.93
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -22208,10 +22208,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -22313,10 +22313,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.85
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -22426,10 +22426,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.61
+                "avg": 3.67
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -22543,10 +22543,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.7
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -22662,10 +22662,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.77
+                "avg": 3.92
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -22785,10 +22785,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.74
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.58
               },
               "accuracy": 100.0
             }
@@ -22902,10 +22902,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.75
+                "avg": 3.91
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -23000,7 +23000,7 @@ window.validationData = {
                 "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -23108,10 +23108,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.79
+                "avg": 3.92
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -23224,7 +23224,7 @@ window.validationData = {
                 "avg": 3.81
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -23336,10 +23336,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.82
+                "avg": 3.89
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -23449,10 +23449,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.76
+                "avg": 3.73
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -23574,10 +23574,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.79
+                "avg": 3.95
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.87
               },
               "accuracy": 100.0
             }
@@ -23671,10 +23671,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.87
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -23790,10 +23790,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.76
+                "avg": 3.73
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -23905,10 +23905,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.82
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -24022,10 +24022,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.82
+                "avg": 3.67
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -24139,10 +24139,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.77
+                "avg": 3.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -24260,10 +24260,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.78
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -24371,10 +24371,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.73
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -24484,10 +24484,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.75
+                "avg": 3.9
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -24595,10 +24595,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.86
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -24718,10 +24718,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.86
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -24841,10 +24841,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.81
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.64
               },
               "accuracy": 100.0
             }
@@ -24948,10 +24948,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.72
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -25065,10 +25065,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.81
+                "avg": 3.82
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -25174,10 +25174,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.85
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -25295,10 +25295,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.77
+                "avg": 3.89
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.64
               },
               "accuracy": 100.0
             }
@@ -25396,10 +25396,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.25
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.64
               },
               "accuracy": 100.0
             }
@@ -25507,10 +25507,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.85
+                "avg": 3.91
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.64
               },
               "accuracy": 100.0
             }
@@ -25618,10 +25618,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.71
+                "avg": 3.93
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.64
               },
               "accuracy": 100.0
             }
@@ -25717,10 +25717,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.95
+                "avg": 3.87
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -25820,10 +25820,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.79
+                "avg": 3.93
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -25933,10 +25933,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.78
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -26044,10 +26044,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.76
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.38
               },
               "accuracy": 100.0
             }
@@ -26143,10 +26143,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -26256,10 +26256,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.84
+                "avg": 3.71
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -26365,10 +26365,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.88
+                "avg": 3.67
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -26466,10 +26466,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.92
+                "avg": 3.9
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -26567,10 +26567,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.94
+                "avg": 3.17
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -26685,7 +26685,7 @@ window.validationData = {
                 "avg": 3.73
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -26780,7 +26780,7 @@ window.validationData = {
                 "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -26895,7 +26895,7 @@ window.validationData = {
                 "avg": 3.82
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -26997,10 +26997,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.72
+                "avg": 3.93
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -27116,10 +27116,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.75
+                "avg": 3.92
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.69
               },
               "accuracy": 100.0
             }
@@ -27233,10 +27233,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.86
+                "avg": 3.75
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -27330,10 +27330,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.92
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -27445,10 +27445,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.66
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -27540,10 +27540,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.77
+                "avg": 3.74
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -27655,10 +27655,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.72
+                "avg": 3.91
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -27754,10 +27754,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.85
+                "avg": 3.73
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -27861,10 +27861,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.79
+                "avg": 3.96
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.75
               },
               "accuracy": 100.0
             }
@@ -27978,10 +27978,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.79
+                "avg": 3.94
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.75
               },
               "accuracy": 100.0
             }
@@ -28093,10 +28093,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.66
+                "avg": 3.88
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.75
               },
               "accuracy": 100.0
             }
@@ -28204,10 +28204,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.79
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -28305,10 +28305,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.79
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -28414,10 +28414,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.85
+                "avg": 3.9
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.59
               },
               "accuracy": 100.0
             }
@@ -28535,10 +28535,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.79
+                "avg": 3.85
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.59
               },
               "accuracy": 100.0
             }
@@ -28654,10 +28654,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.78
+                "avg": 3.77
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -28897,7 +28897,7 @@ window.validationData = {
                 "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -29001,10 +29001,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.0
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -29102,10 +29102,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -29219,10 +29219,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -29334,10 +29334,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -29457,10 +29457,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.54
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.47
               },
               "accuracy": 100.0
             }
@@ -29560,10 +29560,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -29679,10 +29679,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.47
               },
               "accuracy": 100.0
             }
@@ -29796,10 +29796,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.47
               },
               "accuracy": 100.0
             }
@@ -29915,10 +29915,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.51
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.33
               },
               "accuracy": 100.0
             }
@@ -30016,10 +30016,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.75
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -30119,10 +30119,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.33
               },
               "accuracy": 100.0
             }
@@ -30232,10 +30232,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.54
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.33
               },
               "accuracy": 100.0
             }
@@ -30339,10 +30339,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -30438,10 +30438,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.25
+                "avg": 3.88
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -30551,10 +30551,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.48
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.37
               },
               "accuracy": 100.0
             }
@@ -30660,10 +30660,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.37
               },
               "accuracy": 100.0
             }
@@ -30781,10 +30781,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.54
+                "avg": 3.56
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -30906,10 +30906,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.53
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.46
               },
               "accuracy": 100.0
             }
@@ -31015,10 +31015,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -31134,10 +31134,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.54
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -31251,10 +31251,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -31377,7 +31377,7 @@ window.validationData = {
                 "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -31485,10 +31485,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -31596,10 +31596,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.69
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -31718,7 +31718,7 @@ window.validationData = {
                 "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -31832,10 +31832,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -31949,10 +31949,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -32070,10 +32070,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.53
+                "avg": 3.31
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.28
               },
               "accuracy": 100.0
             }
@@ -32171,10 +32171,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.62
+                "avg": 3.75
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -32280,10 +32280,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.3
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.28
               },
               "accuracy": 100.0
             }
@@ -32387,10 +32387,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.51
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.28
               },
               "accuracy": 100.0
             }
@@ -32502,10 +32502,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.74
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.5
               },
               "accuracy": 100.0
             }
@@ -32613,10 +32613,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.56
+                "avg": 3.57
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -32720,10 +32720,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.77
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -32841,10 +32841,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.42
               },
               "accuracy": 100.0
             }
@@ -32946,10 +32946,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.49
               },
               "accuracy": 100.0
             }
@@ -33041,10 +33041,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 2.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -33144,10 +33144,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.51
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.49
               },
               "accuracy": 100.0
             }
@@ -33249,10 +33249,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.69
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.49
               },
               "accuracy": 100.0
             }
@@ -33370,10 +33370,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.67
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.53
               },
               "accuracy": 100.0
             }
@@ -33477,10 +33477,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.72
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -33588,10 +33588,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.54
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.53
               },
               "accuracy": 100.0
             }
@@ -33703,10 +33703,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.53
               },
               "accuracy": 100.0
             }
@@ -33812,10 +33812,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -33919,10 +33919,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -34028,10 +34028,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.48
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -34143,10 +34143,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.43
               },
               "accuracy": 100.0
             }
@@ -34248,10 +34248,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.43
               },
               "accuracy": 100.0
             }
@@ -34359,10 +34359,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.54
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.43
               },
               "accuracy": 100.0
             }
@@ -34472,10 +34472,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.43
               },
               "accuracy": 100.0
             }
@@ -34601,10 +34601,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.38
               },
               "accuracy": 100.0
             }
@@ -34710,10 +34710,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.71
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -34827,10 +34827,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.51
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.38
               },
               "accuracy": 100.0
             }
@@ -34944,10 +34944,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.38
               },
               "accuracy": 100.0
             }
@@ -35059,10 +35059,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.59
+                "avg": 3.57
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -35172,10 +35172,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -35295,10 +35295,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.53
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.33
               },
               "accuracy": 100.0
             }
@@ -35394,10 +35394,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -35507,10 +35507,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -35624,10 +35624,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.56
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -35727,10 +35727,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.63
+                "avg": 3.87
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -35832,10 +35832,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -35933,10 +35933,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -36038,10 +36038,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -36149,10 +36149,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -36254,10 +36254,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.65
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -36490,10 +36490,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.77
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -36599,10 +36599,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -36714,10 +36714,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -36809,10 +36809,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -36907,7 +36907,7 @@ window.validationData = {
                 "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -37001,10 +37001,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -37098,10 +37098,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.92
+                "avg": 3.71
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -37209,10 +37209,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.75
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -37326,10 +37326,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.56
+                "avg": 3.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -37437,10 +37437,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.61
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -37556,10 +37556,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.63
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -37663,10 +37663,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.74
+                "avg": 3.71
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -37758,10 +37758,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 2.38
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -37877,10 +37877,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.68
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -37990,10 +37990,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.67
+                "avg": 3.69
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -38226,10 +38226,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.88
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -38341,10 +38341,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.38
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -38444,10 +38444,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.69
+                "avg": 3.26
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -38559,10 +38559,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -38680,10 +38680,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -38795,10 +38795,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -38914,10 +38914,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -39019,10 +39019,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.36
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -39283,10 +39283,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.68
+                "avg": 3.64
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -39394,10 +39394,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.73
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -39501,10 +39501,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.77
+                "avg": 3.25
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -39626,10 +39626,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.65
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -39735,10 +39735,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.79
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -39832,10 +39832,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -39935,10 +39935,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.68
+                "avg": 3.56
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -40054,10 +40054,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.68
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -40179,10 +40179,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.66
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -40280,10 +40280,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.67
+                "avg": 3.96
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.57
               },
               "accuracy": 100.0
             }
@@ -40383,10 +40383,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.75
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.57
               },
               "accuracy": 100.0
             }
@@ -40496,10 +40496,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.95
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.57
               },
               "accuracy": 100.0
             }
@@ -40615,10 +40615,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.71
+                "avg": 3.88
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.57
               },
               "accuracy": 100.0
             }
@@ -40732,10 +40732,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.63
+                "avg": 3.65
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -40845,10 +40845,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.68
+                "avg": 3.97
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.89
               },
               "accuracy": 100.0
             }
@@ -40950,10 +40950,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.95
+                "avg": 3.65
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -41075,10 +41075,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.67
+                "avg": 3.74
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.47
               },
               "accuracy": 100.0
             }
@@ -41190,10 +41190,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.69
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -41313,10 +41313,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.66
+                "avg": 3.86
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.6
               },
               "accuracy": 100.0
             }
@@ -41541,10 +41541,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.8
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -41662,10 +41662,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -41775,10 +41775,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.26
+                "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -41870,10 +41870,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -41971,10 +41971,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -42068,10 +42068,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -42308,10 +42308,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.88
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -42413,10 +42413,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.21
+                "avg": 3.32
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -42522,10 +42522,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.3
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -42629,10 +42629,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 2.95
+                "avg": 3.21
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -42742,10 +42742,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -42845,10 +42845,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.27
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -42948,10 +42948,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -43049,10 +43049,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -43158,10 +43158,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.26
+                "avg": 3.38
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -43255,10 +43255,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 2.9
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -43360,10 +43360,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.73
+                "avg": 2.97
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -43476,7 +43476,7 @@ window.validationData = {
                 "avg": 3.32
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -43574,10 +43574,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.32
+                "avg": 3.84
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -43669,10 +43669,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 2.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -43785,7 +43785,7 @@ window.validationData = {
                 "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -43901,10 +43901,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -44002,10 +44002,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.32
+                "avg": 3.34
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -44115,10 +44115,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -44210,10 +44210,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -44317,10 +44317,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -44432,10 +44432,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -44549,10 +44549,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -44644,10 +44644,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -44751,10 +44751,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.27
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -44871,7 +44871,7 @@ window.validationData = {
                 "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -44985,10 +44985,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -45086,10 +45086,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.82
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -45191,10 +45191,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.03
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -45292,10 +45292,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.9
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -45391,10 +45391,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 2.82
+                "avg": 3.79
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -45502,10 +45502,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.14
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -45617,10 +45617,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.75
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -45732,10 +45732,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -45849,10 +45849,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -45956,10 +45956,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.08
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -46061,10 +46061,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.23
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -46164,10 +46164,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -46273,10 +46273,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.21
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -46368,10 +46368,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -46467,10 +46467,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.84
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -46570,10 +46570,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.65
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -46693,10 +46693,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -46792,10 +46792,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.07
+                "avg": 2.97
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -46893,10 +46893,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -47006,10 +47006,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -47105,10 +47105,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -47220,10 +47220,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -47323,10 +47323,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.56
+                "avg": 3.12
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -47438,10 +47438,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.56
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -47551,10 +47551,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -47660,10 +47660,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -47763,10 +47763,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.22
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -47872,10 +47872,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.56
+                "avg": 3.34
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -47997,10 +47997,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -48114,10 +48114,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -48221,10 +48221,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -48338,10 +48338,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.51
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -48459,10 +48459,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -48556,10 +48556,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.15
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -48659,10 +48659,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.26
+                "avg": 3.56
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -48776,10 +48776,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -48881,10 +48881,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -48982,10 +48982,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -49097,10 +49097,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.25
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -49198,10 +49198,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.81
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.51
               },
               "accuracy": 100.0
             }
@@ -49301,10 +49301,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.79
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -49402,10 +49402,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -49519,10 +49519,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.77
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -49622,10 +49622,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -49739,10 +49739,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.78
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -49842,10 +49842,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -49955,10 +49955,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.45
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -50076,10 +50076,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -50179,10 +50179,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -50294,10 +50294,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.51
+                "avg": 3.3
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -50415,10 +50415,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -50512,10 +50512,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -50630,7 +50630,7 @@ window.validationData = {
                 "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -50732,10 +50732,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.35
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -50833,10 +50833,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -50934,10 +50934,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -51045,10 +51045,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.45
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -51146,10 +51146,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.56
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -51251,10 +51251,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -51356,10 +51356,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.17
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -51454,7 +51454,7 @@ window.validationData = {
                 "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -51558,10 +51558,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.28
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -51671,10 +51671,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.36
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -51766,10 +51766,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -51879,10 +51879,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.56
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -51990,10 +51990,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -52085,10 +52085,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 2.83
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -52186,10 +52186,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.24
+                "avg": 3.31
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -52295,10 +52295,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.31
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -52400,10 +52400,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -52519,10 +52519,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -52620,10 +52620,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.18
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -52731,10 +52731,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -52842,10 +52842,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.18
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -52937,10 +52937,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -53048,10 +53048,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -53165,10 +53165,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -53292,10 +53292,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.78
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -53409,10 +53409,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.79
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -53526,10 +53526,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.78
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -53637,10 +53637,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.73
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -53748,10 +53748,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.71
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -53861,10 +53861,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.68
               },
               "accuracy": 100.0
             }
@@ -53980,10 +53980,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.28
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -54095,10 +54095,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.32
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -54212,10 +54212,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -54335,10 +54335,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -54448,10 +54448,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -54565,10 +54565,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -54680,10 +54680,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -54795,10 +54795,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -54902,10 +54902,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -55011,10 +55011,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.35
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -55132,10 +55132,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -55237,10 +55237,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -55358,10 +55358,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -55467,10 +55467,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.22
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -55588,10 +55588,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -55705,10 +55705,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -55832,10 +55832,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -55943,10 +55943,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -56070,10 +56070,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -56185,10 +56185,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -56302,10 +56302,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -56423,10 +56423,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -56520,10 +56520,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.67
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -56631,10 +56631,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -56746,10 +56746,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -56867,10 +56867,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -56982,10 +56982,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -57105,10 +57105,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -57210,10 +57210,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.34
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -57315,10 +57315,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -57426,10 +57426,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -57543,10 +57543,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -57668,10 +57668,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -57779,10 +57779,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.32
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -57898,10 +57898,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -57997,10 +57997,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.95
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -58092,10 +58092,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -58199,10 +58199,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.86
+                "avg": 3.06
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -58318,10 +58318,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -58421,10 +58421,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -58526,10 +58526,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.54
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -58645,10 +58645,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -58766,10 +58766,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -58888,7 +58888,7 @@ window.validationData = {
                 "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -59000,10 +59000,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -59111,10 +59111,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -59226,10 +59226,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -59323,10 +59323,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -59436,10 +59436,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -59557,10 +59557,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -59658,10 +59658,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -59765,10 +59765,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -59864,10 +59864,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.04
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -59969,10 +59969,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 2.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -60080,10 +60080,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.09
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -60197,10 +60197,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -60302,10 +60302,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -60405,10 +60405,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.3
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -60510,10 +60510,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -60629,10 +60629,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -60738,10 +60738,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -60849,10 +60849,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -60964,10 +60964,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.08
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -61062,7 +61062,7 @@ window.validationData = {
                 "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -61174,10 +61174,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.28
+                "avg": 3.38
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -61287,10 +61287,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -61408,10 +61408,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -61523,10 +61523,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.45
+                "avg": 3.37
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -61620,10 +61620,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.36
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -61729,10 +61729,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -61828,10 +61828,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -61937,10 +61937,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -62036,10 +62036,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -62143,10 +62143,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.31
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -62258,10 +62258,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.3
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -62359,10 +62359,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 2.95
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -62462,10 +62462,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.36
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -62577,10 +62577,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -62680,10 +62680,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.27
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -62797,10 +62797,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.38
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -62912,10 +62912,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.25
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -63015,10 +63015,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -63120,10 +63120,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.56
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -63225,10 +63225,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.21
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -63320,10 +63320,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -63423,10 +63423,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 2.84
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -63524,10 +63524,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -63631,10 +63631,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.24
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -63748,10 +63748,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -63843,10 +63843,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -63938,10 +63938,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.75
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -64053,10 +64053,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -64167,7 +64167,7 @@ window.validationData = {
                 "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -64289,10 +64289,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -64398,10 +64398,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.26
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -64514,7 +64514,7 @@ window.validationData = {
                 "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -64618,10 +64618,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -64723,10 +64723,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.69
+                "avg": 3.67
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -64832,10 +64832,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -64951,10 +64951,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -65072,10 +65072,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -65177,10 +65177,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -65288,10 +65288,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.13
+                "avg": 3.32
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -65383,10 +65383,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -65496,10 +65496,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.38
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -65607,10 +65607,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.36
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -65730,10 +65730,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -65843,10 +65843,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -65960,10 +65960,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -66071,10 +66071,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.22
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -66184,10 +66184,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -66289,10 +66289,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.56
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -66402,10 +66402,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.26
+                "avg": 3.36
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -66505,10 +66505,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.15
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -66610,10 +66610,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -66729,10 +66729,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -66842,10 +66842,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.38
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -66957,10 +66957,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -67070,10 +67070,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -67181,10 +67181,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.64
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -67280,10 +67280,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.69
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -67379,10 +67379,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -67476,10 +67476,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -67571,10 +67571,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -67666,10 +67666,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -67775,10 +67775,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.38
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -67886,10 +67886,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -68003,10 +68003,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.53
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -68108,10 +68108,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.27
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -68219,10 +68219,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.59
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -68318,10 +68318,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.26
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -68413,10 +68413,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 2.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -68520,10 +68520,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.32
+                "avg": 3.27
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -68637,10 +68637,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.56
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -68734,10 +68734,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -68833,10 +68833,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.31
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -68934,10 +68934,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -69045,10 +69045,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -69162,10 +69162,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.75
               },
               "accuracy": 100.0
             }
@@ -69275,10 +69275,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.75
               },
               "accuracy": 100.0
             }
@@ -69384,10 +69384,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -69482,7 +69482,7 @@ window.validationData = {
                 "avg": 3.2
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -69580,10 +69580,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.63
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -69693,10 +69693,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -69806,10 +69806,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -69907,10 +69907,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.38
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -70026,10 +70026,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -70141,10 +70141,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.53
               },
               "accuracy": 100.0
             }
@@ -70242,10 +70242,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.69
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.53
               },
               "accuracy": 100.0
             }
@@ -70347,10 +70347,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.63
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -70454,10 +70454,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -70553,10 +70553,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.33
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -70652,10 +70652,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -70757,10 +70757,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.15
+                "avg": 2.77
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -70866,10 +70866,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -70961,10 +70961,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.0
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -71084,10 +71084,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -71197,10 +71197,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -71317,7 +71317,7 @@ window.validationData = {
                 "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -71435,10 +71435,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -71550,10 +71550,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.48
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -71649,10 +71649,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -71756,10 +71756,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.35
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -71861,10 +71861,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.12
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -71976,10 +71976,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.21
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -72077,10 +72077,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.0
+                "avg": 3.2
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -72190,10 +72190,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -72305,10 +72305,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -72418,10 +72418,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -72537,10 +72537,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -72652,10 +72652,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.37
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -72761,10 +72761,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -72876,10 +72876,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -72995,10 +72995,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -73098,10 +73098,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.23
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -73205,10 +73205,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.57
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -73316,10 +73316,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.53
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -73419,10 +73419,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -73514,10 +73514,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -73619,10 +73619,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.21
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -73738,10 +73738,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -73853,10 +73853,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.86
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.74
               },
               "accuracy": 100.0
             }
@@ -73966,10 +73966,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.82
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.74
               },
               "accuracy": 100.0
             }
@@ -74077,10 +74077,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.82
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.74
               },
               "accuracy": 100.0
             }
@@ -74176,10 +74176,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.87
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.74
               },
               "accuracy": 100.0
             }
@@ -74277,10 +74277,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.87
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.74
               },
               "accuracy": 100.0
             }
@@ -74390,10 +74390,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -74491,10 +74491,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.61
+                "avg": 3.8
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.63
               },
               "accuracy": 100.0
             }
@@ -74608,10 +74608,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.3
+                "avg": 3.81
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.74
               },
               "accuracy": 100.0
             }
@@ -74725,10 +74725,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.74
               },
               "accuracy": 100.0
             }
@@ -74838,10 +74838,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.83
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.74
               },
               "accuracy": 100.0
             }
@@ -74951,10 +74951,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -75066,10 +75066,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -75193,10 +75193,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -75322,10 +75322,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -75451,10 +75451,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -75568,10 +75568,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -75679,10 +75679,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.45
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -75798,10 +75798,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -75901,10 +75901,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.08
+                "avg": 3.13
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -76006,10 +76006,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 2.97
+                "avg": 3.23
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -76119,10 +76119,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.14
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -76230,10 +76230,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.3
+                "avg": 3.69
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.5
               },
               "accuracy": 100.0
             }
@@ -76343,10 +76343,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.31
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -76464,10 +76464,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.71
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.5
               },
               "accuracy": 100.0
             }
@@ -76575,10 +76575,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -76686,10 +76686,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.5
               },
               "accuracy": 100.0
             }
@@ -76805,10 +76805,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.57
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.5
               },
               "accuracy": 100.0
             }
@@ -76918,10 +76918,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -77023,10 +77023,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.36
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -77144,10 +77144,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -77239,10 +77239,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 2.75
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -77338,10 +77338,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.35
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -77433,10 +77433,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.0
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -77558,10 +77558,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -77673,10 +77673,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -77792,10 +77792,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -77887,10 +77887,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.0
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -77990,10 +77990,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.6
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -78097,10 +78097,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.17
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -78216,10 +78216,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.35
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -78333,10 +78333,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -78434,10 +78434,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.22
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -78533,10 +78533,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -78628,10 +78628,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.0
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -78731,10 +78731,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.19
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -78832,10 +78832,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.48
+                "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -78959,10 +78959,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.81
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.69
               },
               "accuracy": 100.0
             }
@@ -79078,10 +79078,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -79201,10 +79201,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.82
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.69
               },
               "accuracy": 100.0
             }
@@ -79306,10 +79306,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -79419,10 +79419,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.81
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.69
               },
               "accuracy": 100.0
             }
@@ -79534,10 +79534,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.69
               },
               "accuracy": 100.0
             }
@@ -79653,10 +79653,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -79768,10 +79768,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -79877,10 +79877,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.51
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -79980,10 +79980,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.67
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -80077,10 +80077,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.67
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -80176,10 +80176,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -80283,10 +80283,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.3
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -80378,10 +80378,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -80475,10 +80475,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -80572,10 +80572,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.48
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -80681,10 +80681,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -80788,10 +80788,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -80887,10 +80887,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.45
+                "avg": 3.75
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -80991,7 +80991,7 @@ window.validationData = {
                 "avg": 3.28
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -81083,10 +81083,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -81184,10 +81184,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -81283,10 +81283,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 2.75
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -81382,10 +81382,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.62
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -81479,10 +81479,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -81578,10 +81578,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.68
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -81683,10 +81683,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -81780,10 +81780,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -81889,10 +81889,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.3
+                "avg": 3.59
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -81994,10 +81994,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 2.75
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -82101,10 +82101,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.32
+                "avg": 3.34
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -82196,10 +82196,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.83
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -82291,10 +82291,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -82398,10 +82398,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.12
+                "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -82501,10 +82501,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.54
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -82624,10 +82624,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -82721,10 +82721,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.48
+                "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -82826,10 +82826,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -82939,10 +82939,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.34
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -83054,10 +83054,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.87
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.81
               },
               "accuracy": 100.0
             }
@@ -83165,10 +83165,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.91
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.81
               },
               "accuracy": 100.0
             }
@@ -83282,10 +83282,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.87
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.81
               },
               "accuracy": 100.0
             }
@@ -83403,10 +83403,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -83514,10 +83514,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.51
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -83629,10 +83629,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.31
+                "avg": 3.37
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -83730,10 +83730,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -83837,10 +83837,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.22
+                "avg": 3.66
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -83932,10 +83932,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -84051,10 +84051,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -84154,10 +84154,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -84265,10 +84265,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -84370,10 +84370,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -84473,10 +84473,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.31
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -84590,10 +84590,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -84703,10 +84703,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -84818,10 +84818,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -84913,10 +84913,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -85024,10 +85024,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.48
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -85119,10 +85119,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -85230,10 +85230,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -85341,10 +85341,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -85462,10 +85462,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.37
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -85571,10 +85571,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.45
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -85678,10 +85678,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.33
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -85797,10 +85797,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -85912,10 +85912,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.27
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -86025,10 +86025,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.46
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -86140,10 +86140,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.27
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -86253,10 +86253,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -86362,10 +86362,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.45
+                "avg": 3.34
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -86459,10 +86459,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.27
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -86574,10 +86574,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -86673,10 +86673,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -86786,10 +86786,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.24
+                "avg": 3.38
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -86897,10 +86897,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.31
+                "avg": 3.29
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -87002,10 +87002,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.43
+                "avg": 3.67
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -87097,10 +87097,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -87208,10 +87208,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.55
+                "avg": 3.23
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -87317,10 +87317,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.37
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -87422,10 +87422,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.45
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -87541,10 +87541,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -87779,10 +87779,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -87896,10 +87896,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -88011,10 +88011,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.68
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -88124,10 +88124,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -88237,10 +88237,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.26
+                "avg": 3.41
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -88332,10 +88332,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -88441,10 +88441,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.45
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -88536,10 +88536,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -88651,10 +88651,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.38
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -88748,10 +88748,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.7
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -88861,10 +88861,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.31
+                "avg": 3.35
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -88956,10 +88956,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 2.75
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -89063,10 +89063,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.53
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -89170,10 +89170,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.28
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -89285,10 +89285,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.32
+                "avg": 3.33
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -89388,10 +89388,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.58
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -89485,10 +89485,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.6
+                "avg": 3.08
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -89596,10 +89596,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.28
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -89699,10 +89699,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -89814,10 +89814,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -89913,10 +89913,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.14
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -90014,10 +90014,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.39
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -90115,10 +90115,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.0
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -90218,10 +90218,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -90319,10 +90319,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.17
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -90422,10 +90422,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.49
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -90533,10 +90533,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.29
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -90636,10 +90636,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.33
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -90741,10 +90741,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.25
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -90840,10 +90840,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -90951,10 +90951,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.57
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -91046,10 +91046,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -91147,10 +91147,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -91265,7 +91265,7 @@ window.validationData = {
                 "avg": 3.38
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -91375,10 +91375,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.31
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -91496,10 +91496,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.41
+                "avg": 3.48
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -91591,10 +91591,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.3
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -91708,10 +91708,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.37
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -91803,10 +91803,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.2
+                "avg": 2.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -91910,10 +91910,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.05
+                "avg": 3.36
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -92019,10 +92019,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.42
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -92126,10 +92126,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.56
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -92221,10 +92221,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 4.0
+                "avg": 3.4
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -92341,7 +92341,7 @@ window.validationData = {
                 "avg": 3.33
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -92451,10 +92451,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.46
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -92564,10 +92564,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.39
+                "avg": 3.44
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -92673,10 +92673,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.5
+                "avg": 3.31
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -92780,10 +92780,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.4
+                "avg": 3.28
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -92893,10 +92893,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.47
+                "avg": 3.5
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -93010,10 +93010,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.36
+                "avg": 3.47
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -93109,10 +93109,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 3.43
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -93369,10 +93369,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.44
               },
               "accuracy": 100.0
             }
@@ -93474,10 +93474,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.65
+                "avg": 3.61
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -93591,10 +93591,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.73
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.44
               },
               "accuracy": 100.0
             }
@@ -93714,10 +93714,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.57
+                "avg": 3.72
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.44
               },
               "accuracy": 100.0
             }
@@ -93831,10 +93831,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.63
+                "avg": 3.75
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.44
               },
               "accuracy": 100.0
             }
@@ -93929,7 +93929,7 @@ window.validationData = {
                 "avg": 4.0
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.44
               },
               "accuracy": 100.0
             }
@@ -94039,10 +94039,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.49
+                "avg": 3.55
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.44
               },
               "accuracy": 100.0
             }
@@ -94158,10 +94158,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.63
+                "avg": 3.67
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.44
               },
               "accuracy": 100.0
             }
@@ -94258,7 +94258,7 @@ window.validationData = {
                 "avg": 3.62
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.44
               },
               "accuracy": 100.0
             }
@@ -94491,10 +94491,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.52
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -94602,10 +94602,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.35
+                "avg": 2.92
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -94721,10 +94721,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.58
+                "avg": 3.27
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -94836,10 +94836,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.51
+                "avg": 3.35
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -94951,10 +94951,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.59
+                "avg": 3.84
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.75
               },
               "accuracy": 100.0
             }
@@ -95072,10 +95072,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.63
+                "avg": 3.86
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.75
               },
               "accuracy": 100.0
             }
@@ -95175,10 +95175,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.32
+                "avg": 3.76
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.75
               },
               "accuracy": 100.0
             }
@@ -95280,10 +95280,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.45
+                "avg": 3.37
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -95512,10 +95512,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.04
+                "avg": 3.52
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -95623,10 +95623,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.44
+                "avg": 3.51
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -95728,10 +95728,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.31
+                "avg": 3.42
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }
@@ -95843,10 +95843,10 @@ window.validationData = {
             },
             "gpa": {
               "synth": {
-                "avg": 3.59
+                "avg": 3.53
               },
               "ref": {
-                "avg": "N/A"
+                "avg": 3.4
               },
               "accuracy": 100.0
             }

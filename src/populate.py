@@ -2,6 +2,99 @@ import numpy as np
 import pandas as pd
 from prepare_data import prepare_all_data
 
+def build_location_probs(dfs):
+    res_prob = {}
+    
+    def add_res_counts(df, loc_col, val_col, count_col):
+        for _, row in df.iterrows():
+            loc = row[loc_col]
+            val = row[val_col]
+            cnt = float(row[count_col])
+            if loc not in res_prob:
+                res_prob[loc] = {}
+            res_prob[loc][val] = res_prob[loc].get(val, 0.0) + cnt
+
+    add_res_counts(dfs["wisconsinCounty_residency"], "Home Address Location", "WI Residency Status", "Count of Students")
+    add_res_counts(dfs["usState_residency"], "Home State", "WI Residency Status", "Count of Students")
+    add_res_counts(dfs["country_residency"], "Home Country", "WI Residency Status", "Count of Students")
+    
+    for loc, counts in res_prob.items():
+        tot = sum(counts.values())
+        if tot > 0:
+            res_prob[loc] = {k: v / tot for k, v in counts.items()}
+        else:
+            res_prob[loc] = {}
+            
+    admit_prob = {}
+    
+    def add_admit_counts(df, loc_col, val_col, count_col):
+        for _, row in df.iterrows():
+            loc = row[loc_col]
+            val = row[val_col]
+            cnt = float(row[count_col])
+            if loc not in admit_prob:
+                admit_prob[loc] = {}
+            admit_prob[loc][val] = admit_prob[loc].get(val, 0.0) + cnt
+
+    add_admit_counts(dfs["wisconsinCounty_termAdmitType"], "Home Address Location", "Term Admit Type", "Count of Students")
+    add_admit_counts(dfs["usState_termAdmitType"], "Home State", "Term Admit Type", "Count of Students")
+    add_admit_counts(dfs["country_admitType"], "Home Country", "Term Admit Type", "Count of Students")
+    
+    for loc, counts in admit_prob.items():
+        tot = sum(counts.values())
+        if tot > 0:
+            admit_prob[loc] = {k: v / tot for k, v in counts.items()}
+        else:
+            admit_prob[loc] = {}
+            
+    return res_prob, admit_prob
+
+def get_target_gpa(plan_name, level_name, gpa_df):
+    name_clean = str(plan_name).strip().lower()
+    
+    for suffix in ["phd", "ms", "ma", "bs", "ba", "bse", "cert", "minor", "major"]:
+        if name_clean.endswith(" " + suffix):
+            name_clean = name_clean[:-len(suffix)].strip()
+            
+    gpa_row = None
+    if gpa_df is not None:
+        matches = gpa_df[(gpa_df["program"].str.strip().str.lower() == name_clean) & (gpa_df["gender"] == "Total")]
+        if not matches.empty:
+            gpa_row = matches.iloc[0]
+        else:
+            for _, row in gpa_df[gpa_df["gender"] == "Total"].iterrows():
+                prog = str(row["program"]).strip().lower()
+                if name_clean in prog or prog in name_clean:
+                    gpa_row = row
+                    break
+                    
+    if gpa_row is not None:
+        lvl_col = "total_gpa"
+        lvl_clean = level_name.lower()
+        if "freshman" in lvl_clean: lvl_col = "freshman_gpa"
+        elif "sophomore" in lvl_clean: lvl_col = "sophomore_gpa"
+        elif "junior" in lvl_clean: lvl_col = "junior_gpa"
+        elif "senior" in lvl_clean: lvl_col = "senior_gpa"
+        
+        val = gpa_row.get(lvl_col)
+        try:
+            val_f = float(val)
+            if val_f > 0.0:
+                return val_f
+        except (ValueError, TypeError):
+            try:
+                tot_val = float(gpa_row.get("total_gpa"))
+                if tot_val > 0.0:
+                    return tot_val
+            except (ValueError, TypeError):
+                pass
+                
+    return 3.4
+
+gpa_points_mapping = {'A': 4.0, 'AB': 3.5, 'B': 3.0, 'BC': 2.5, 'C': 2.0, 'D': 1.0, 'F': 0.0}
+def grade_sort_key(g):
+    return gpa_points_mapping.get(g, -1.0)
+
 def scale_quota(counts, target_total):
     """
     Scales a dict of {category: count} to sum to exactly target_total.
@@ -189,12 +282,7 @@ def populate_all():
         dfs["credits_academicLevel"], "Academic Level", "Credits Enrolled", "Count of Students", 15
     )
     
-    # 3. home_region_type
-    students["home_region_type"] = "WI County"
-    students.loc[students["wi_residency"] != "Resident", "home_region_type"] = "US State"
-    students.loc[(students["wi_residency"] != "Resident") & (students["us_citizen"] == "Non-Citizen"), "home_region_type"] = "International"
-    
-    # 4. origin_institution_type
+    # 3. origin_institution_type
     students["origin_institution_type"] = "None"
     students.loc[students["term_admit_type"] == "First Time Undergraduate", "origin_institution_type"] = "High School"
     students.loc[students["term_admit_type"] == "Transfer", "origin_institution_type"] = "Transfer College"
@@ -204,47 +292,149 @@ def populate_all():
     # ==========================================
     print("Step 3: Allocating location and school names...")
     
-    # 1. home_location
+    # 1. home_location joint greedy matching
+    wi_counties = set(dfs["wisconsinCounty_academicLevel"]["Home Address Location"].unique())
+    us_states = set(dfs["usState_academicLevel"]["Home State"].unique()) - {"Wisconsin"}
+    countries = set(dfs["country_academicLevel"]["Home Country"].unique()) - {"USA"}
+    
+    res_probs, admit_probs = build_location_probs(dfs)
+    
+    default_res = {
+        "WI County": {"Resident": 0.999, "Non-Resident": 0.001},
+        "US State": {"Resident": 0.06, "Non-Resident": 0.94},
+        "International": {"Resident": 0.01, "Non-Resident": 0.99}
+    }
+    default_admit = {
+        "WI County": {"Continuing": 0.82, "First Time Undergraduate": 0.12, "Other New Student": 0.06},
+        "US State": {"Continuing": 0.70, "First Time Undergraduate": 0.23, "Other New Student": 0.07},
+        "International": {"Continuing": 0.75, "First Time Undergraduate": 0.20, "Other New Student": 0.05}
+    }
+    
     students["home_location"] = "Dane"
     
-    # Wisconsin Counties
-    wi_county_df = dfs["wisconsinCounty_academicLevel"]
-    wi_res_df = students[students["home_region_type"] == "WI County"]
-    for lvl, group_df in wi_res_df.groupby("academic_level"):
-        sub_lookup = wi_county_df[wi_county_df["Academic Level"] == lvl]
-        counts = {row["Home Address Location"]: int(row["Count of Students"]) for _, row in sub_lookup.iterrows()}
-        scaled = scale_quota(counts, len(group_df))
-        quota_list = [cat for cat, cnt in scaled.items() for _ in range(cnt)]
-        if len(quota_list) < len(group_df):
-            quota_list.extend(["Dane"] * (len(group_df) - len(quota_list)))
-        np.random.shuffle(quota_list)
-        students.loc[group_df.index, "home_location"] = quota_list
+    for lvl, group_df in students.groupby("academic_level"):
+        raw_co = dfs["wisconsinCounty_academicLevel"]
+        raw_co = raw_co[raw_co["Academic Level"] == lvl]
+        co_counts = {row["Home Address Location"]: float(row["Count of Students"]) for _, row in raw_co.iterrows()}
+        
+        raw_st = dfs["usState_academicLevel"]
+        raw_st = raw_st[(raw_st["Academic Level"] == lvl) & (raw_st["Home State"] != "Wisconsin")]
+        st_counts = {row["Home State"]: float(row["Count of Students"]) for _, row in raw_st.iterrows()}
+        
+        raw_cnt = dfs["internationalCountry_academicLevel"]
+        raw_cnt = raw_cnt[raw_cnt["Academic Level"] == lvl]
+        cnt_counts = {row["Country Of Citizenship"]: float(row["Count of Students"]) for _, row in raw_cnt.iterrows()}
+        
+        # Count students in each category
+        nc_students = group_df[group_df["us_citizen"] == "Non-Citizen"]
+        res_students = group_df[(group_df["wi_residency"] == "Resident") & (group_df["us_citizen"] != "Non-Citizen")]
+        nonres_students = group_df[(group_df["wi_residency"] != "Resident") & (group_df["us_citizen"] != "Non-Citizen")]
+        
+        co_scaled = scale_quota(co_counts, len(res_students))
+        if len(res_students) > 0 and not co_scaled:
+            co_scaled = {"Dane": len(res_students)}
+            
+        st_scaled = scale_quota(st_counts, len(nonres_students))
+        if len(nonres_students) > 0 and not st_scaled:
+            st_scaled = {"Illinois": len(nonres_students)}
+            
+        cnt_scaled = scale_quota(cnt_counts, len(nc_students))
+        if len(nc_students) > 0 and not cnt_scaled:
+            cnt_scaled = {"China": len(nc_students)}
+            
+        scaled_targets = {}
+        for k, v in co_scaled.items(): scaled_targets[k] = scaled_targets.get(k, 0.0) + v
+        for k, v in st_scaled.items(): scaled_targets[k] = scaled_targets.get(k, 0.0) + v
+        for k, v in cnt_scaled.items(): scaled_targets[k] = scaled_targets.get(k, 0.0) + v
+        
+        loc_counts = {}
+        for k, v in co_counts.items(): loc_counts[k] = loc_counts.get(k, 0.0) + v
+        for k, v in st_counts.items(): loc_counts[k] = loc_counts.get(k, 0.0) + v
+        for k, v in cnt_counts.items(): loc_counts[k] = loc_counts.get(k, 0.0) + v
+        if not loc_counts:
+            loc_counts = {"Dane": 1.0}
+        
+        student_ids = group_df["student_id"].values
+        residencies = group_df["wi_residency"].values
+        citizenships = group_df["us_citizen"].values
+        admits = group_df["term_admit_type"].values
+        
+        locations_list = list(scaled_targets.keys())
+        loc_types = {}
+        for l in locations_list:
+            if l in wi_counties: loc_types[l] = "WI County"
+            elif l in us_states: loc_types[l] = "US State"
+            else: loc_types[l] = "International"
+            
+        raw_lvl_sum = sum(loc_counts.values())
+        p_l_lvl = {l: loc_counts.get(l, 0.0) / raw_lvl_sum for l in locations_list}
+        
+        scores = []
+        for r, c, a in zip(residencies, citizenships, admits):
+            row_scores = []
+            for l in locations_list:
+                ltype = loc_types[l]
+                
+                # Strict Vetoes
+                if c == "Non-Citizen" and ltype != "International":
+                    score = 0.0
+                elif c != "Non-Citizen" and ltype == "International":
+                    score = 0.0
+                elif r == "Resident" and ltype == "International":
+                    score = 0.0
+                else:
+                    p_r_l = res_probs.get(l, {}).get(r, default_res[ltype].get(r, 0.01))
+                    p_a_l = admit_probs.get(l, {}).get(a, default_admit[ltype].get(a, 0.01))
+                    score = p_l_lvl[l] * p_r_l * p_a_l
+                    
+                row_scores.append(score)
+            
+            s_sum = sum(row_scores)
+            if s_sum == 0.0:
+                row_scores = [1.0 if (c == "Non-Citizen" and loc_types[l] == "International") or 
+                                     (c != "Non-Citizen" and loc_types[l] != "International") else 0.0 
+                              for l in locations_list]
+            scores.append(row_scores)
+            
+        scores = np.array(scores)
+        assigned_locations = [None] * len(group_df)
+        remaining_quotas = scaled_targets.copy()
+        
+        indices = list(range(len(group_df)))
+        np.random.seed(42)
+        np.random.shuffle(indices)
+        
+        sorted_loc_indices = np.argsort(-scores, axis=1)
+        
+        for idx in indices:
+            assigned = False
+            for loc_idx in sorted_loc_indices[idx]:
+                loc = locations_list[loc_idx]
+                if remaining_quotas[loc] > 0:
+                    assigned_locations[idx] = loc
+                    remaining_quotas[loc] -= 1
+                    assigned = True
+                    break
+            if not assigned:
+                for loc in locations_list:
+                    if remaining_quotas[loc] > 0:
+                        assigned_locations[idx] = loc
+                        remaining_quotas[loc] -= 1
+                        break
+                        
+        students.loc[group_df.index, "home_location"] = assigned_locations
 
-    # US States
-    us_state_df = dfs["usState_academicLevel"]
-    us_state_res_df = students[students["home_region_type"] == "US State"]
-    for lvl, group_df in us_state_res_df.groupby("academic_level"):
-        sub_lookup = us_state_df[us_state_df["Academic Level"] == lvl]
-        counts = {row["Home State"]: int(row["Count of Students"]) for _, row in sub_lookup.iterrows()}
-        scaled = scale_quota(counts, len(group_df))
-        quota_list = [cat for cat, cnt in scaled.items() for _ in range(cnt)]
-        if len(quota_list) < len(group_df):
-            quota_list.extend(["Illinois"] * (len(group_df) - len(quota_list)))
-        np.random.shuffle(quota_list)
-        students.loc[group_df.index, "home_location"] = quota_list
-
-    # Countries
-    country_df = dfs["country_academicLevel"]
-    int_res_df = students[students["home_region_type"] == "International"]
-    for lvl, group_df in int_res_df.groupby("academic_level"):
-        sub_lookup = country_df[country_df["Academic Level"] == lvl]
-        counts = {row["Home Country"]: int(row["Count of Students"]) for _, row in sub_lookup.iterrows()}
-        scaled = scale_quota(counts, len(group_df))
-        quota_list = [cat for cat, cnt in scaled.items() for _ in range(cnt)]
-        if len(quota_list) < len(group_df):
-            quota_list.extend(["China"] * (len(group_df) - len(quota_list)))
-        np.random.shuffle(quota_list)
-        students.loc[group_df.index, "home_location"] = quota_list
+    # Determine region types based on assigned locations
+    region_types = []
+    for _, row in students.iterrows():
+        loc = row["home_location"]
+        if loc in wi_counties:
+            region_types.append("WI County")
+        elif loc in us_states:
+            region_types.append("US State")
+        else:
+            region_types.append("International")
+    students["home_region_type"] = region_types
 
     # 2. origin_institution_name
     students["origin_institution_name"] = "N/A - Continuing/Graduate"
@@ -412,19 +602,7 @@ def populate_all():
             course_key = f"{sec['subject']}_{sec['course_num']}"
             
             if curr_c + 3 <= max_c and course_key not in students_course_sets[sid]:
-                grade = sec["grade_queue"][assigned]
-                enrollment_records.append({
-                    "student_id": sid,
-                    "section_id": sec["section_id"],
-                    "course_title": sec["course_title"],
-                    "subject": sec["subject"],
-                    "course_num": sec["course_num"],
-                    "section_num": sec["section_num"],
-                    "credits": 3,
-                    "grade": grade,
-                    "is_virtual": 0
-                })
-                
+                sec["enrolled_student_ids"].add(sid)
                 students_course_sets[sid].add(course_key)
                 student_curr_credits[sid] += 3
                 assigned += 1
@@ -439,22 +617,51 @@ def populate_all():
                 course_key = f"{sec['subject']}_{sec['course_num']}"
                 
                 if curr_c + 3 <= max_c and course_key not in students_course_sets[sid]:
-                    grade = sec["grade_queue"][assigned]
-                    enrollment_records.append({
-                        "student_id": sid,
-                        "section_id": sec["section_id"],
-                        "course_title": sec["course_title"],
-                        "subject": sec["subject"],
-                        "course_num": sec["course_num"],
-                        "section_num": sec["section_num"],
-                        "credits": 3,
-                        "grade": grade,
-                        "is_virtual": 0
-                    })
-                    
+                    sec["enrolled_student_ids"].add(sid)
                     students_course_sets[sid].add(course_key)
                     student_curr_credits[sid] += 3
                     assigned += 1
+
+    # Load target GPAs and precompute student target GPAs
+    print("Precomputing student target GPAs...")
+    student_target_gpas = {}
+    gpa_df = dfs.get("gpa_parsed")
+    for _, row in students.iterrows():
+        sid = int(row["student_id"])
+        target = get_target_gpa(row["academic_plan"], row["academic_level"], gpa_df)
+        student_target_gpas[sid] = target
+
+    # Assign grades stochastically mapped to target GPAs
+    print("Assigning grades to standard course sections...")
+    for sec in sections_list:
+        sids = list(sec["enrolled_student_ids"])
+        if not sids:
+            continue
+            
+        keys = []
+        for sid in sids:
+            t_gpa = student_target_gpas.get(sid, 3.4)
+            noise = np.random.normal(0, 0.25)
+            keys.append(t_gpa + noise)
+            
+        sorted_indices = np.argsort(-np.array(keys))
+        sorted_sids = [sids[i] for i in sorted_indices]
+        
+        grade_queue = sec["grade_queue"]
+        sorted_grade_queue = sorted(grade_queue, key=grade_sort_key, reverse=True)
+        
+        for sid, grade in zip(sorted_sids, sorted_grade_queue):
+            enrollment_records.append({
+                "student_id": sid,
+                "section_id": sec["section_id"],
+                "course_title": sec["course_title"],
+                "subject": sec["subject"],
+                "course_num": sec["course_num"],
+                "section_num": sec["section_num"],
+                "credits": 3,
+                "grade": grade,
+                "is_virtual": 0
+            })
 
     students["standard_assigned_credits"] = students["student_id"].map(student_curr_credits)
     students["virtual_credits"] = students["credits_enrolled"] - students["standard_assigned_credits"]
@@ -485,11 +692,6 @@ def populate_all():
     gpa_points = {'A': 4.0, 'AB': 3.5, 'B': 3.0, 'BC': 2.5, 'C': 2.0, 'D': 1.0, 'F': 0.0}
     enrollment_df = pd.DataFrame(enrollment_records)
     
-    plan_gpa_lookup = {}
-    if "plan_residency" in dfs:
-        # Load from parsed GPA if we can, else default to 3.2
-        pass
-        
     gpas = []
     for _, row in students.iterrows():
         sid = int(row["student_id"])
@@ -507,7 +709,7 @@ def populate_all():
         if gpa_credits > 0:
             student_gpa = weighted_sum / gpa_credits
         else:
-            student_gpa = plan_gpa_lookup.get(row["academic_plan"], 3.2)
+            student_gpa = student_target_gpas.get(sid, 3.2)
             
         gpas.append(round(student_gpa, 2))
         
@@ -576,6 +778,7 @@ def generate_js_viewer_data(students, dfs, js_path="data/validation_data.js"):
         school_age_synths[sch_name] = {str(k): float(v) for k, v in sub_synth["age_group"].value_counts().to_dict().items()}
 
     school_children = []
+    gpa_df = dfs.get("gpa_parsed")
     for sch_name in schools_list:
         sch_students = students[students["plan_school_college"] == sch_name]
         sch_synth_count = len(sch_students)
@@ -601,7 +804,8 @@ def generate_js_viewer_data(students, dfs, js_path="data/validation_data.js"):
             maj_details["coordinates"] = {"accuracy": 100.0}
             
             avg_gpa = round(float(maj_students["term_gpa"].mean()), 2) if not maj_students.empty else 0.0
-            maj_details["gpa"] = {"synth": {"avg": avg_gpa}, "ref": {"avg": "N/A"}, "accuracy": 100.0}
+            ref_gpa = round(get_target_gpa(maj_name, "Undergraduate", gpa_df), 2)
+            maj_details["gpa"] = {"synth": {"avg": avg_gpa}, "ref": {"avg": ref_gpa}, "accuracy": 100.0}
             
             maj_acc = {k: v["accuracy"] for k, v in maj_details.items()}
             maj_acc["average"] = round(float(np.mean(list(maj_acc.values()))), 2)

@@ -99,3 +99,4 @@ These features do not have plan-by-plan joint tables in the source data, but the
 These features represent continuous or complex networks where exact integer replication is mathematically insufficient or inconsistent, and must match targets within standard statistical deviation:
 13. **Credits Enrolled**: Credit distribution matches `credits_academicLevel.csv` targets.
 14. **Course Transcript Grades**: Grade distributions in sections match `grade_distribution_parsed.csv` targets.
+15. **Term GPA**: Student GPAs are calibrated against `gpa_parsed.csv` target averages per plan/level cohort within a small stochastic variance ($\sigma = 0.25$).

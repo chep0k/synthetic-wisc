@@ -80,30 +80,62 @@
 
     <!-- Main Workspace Container -->
     <main class="flex-1 overflow-y-auto p-8 bg-slate-50">
-        <div class="max-w-6xl mx-auto space-y-8">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8">
             
-            <!-- University Level View: School Grid -->
-            <section id="view-university" class="space-y-8">
-                <!-- University Aggregate Header -->
-                <div id="univ-aggregate-card" class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                    <!-- Dynamically populated -->
-                </div>
-                
-                <div>
-                    <h2 class="text-xl font-extrabold text-slate-900 tracking-tight mb-6" id="universityHeaderTitle">Academic Colleges & Schools</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="schoolGrid">
-                        <!-- Dynamic School Cards -->
+            <!-- Left Column: School/Major Grids -->
+            <div class="flex-1 space-y-8">
+                <!-- University Level View: School Grid -->
+                <section id="view-university" class="space-y-8">
+                    <!-- University Aggregate Header -->
+                    <div id="univ-aggregate-card" class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                        <!-- Dynamically populated -->
+                    </div>
+                    
+                    <div>
+                        <h2 class="text-xl font-extrabold text-slate-900 tracking-tight mb-6" id="universityHeaderTitle">Academic Colleges & Schools</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="schoolGrid">
+                            <!-- Dynamic School Cards -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- School Level View: Major Grid (Hidden by default) -->
+                <section id="view-school" class="hidden">
+                    <h2 class="text-xl font-extrabold text-slate-900 tracking-tight mb-6" id="schoolHeaderTitle">Letters & Science</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="majorGrid">
+                        <!-- Dynamic Major Cards -->
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Right Column: Interactive Details Panel -->
+            <div class="w-full lg:w-[420px] shrink-0">
+                <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm lg:sticky lg:top-8 space-y-6" id="detailsPanel">
+                    <!-- Header -->
+                    <div>
+                        <span class="text-[10px] font-bold text-badgerRed uppercase tracking-widest block mb-1" id="detailsCategory">University Aggregate</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 tracking-tight leading-snug" id="detailsName">University of Wisconsin-Madison</h3>
+                        <p class="text-xs text-slate-400 mt-1" id="detailsStats">Loading stats...</p>
+                    </div>
+                    
+                    <!-- Overall Score -->
+                    <div class="flex items-center gap-4 py-4 border-y border-slate-100">
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-mono text-xl font-black shrink-0 border-2" id="detailsScoreBadge">
+                            --%
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-slate-700">Overall Accuracy Match</div>
+                            <div class="text-[10px] text-slate-400 mt-0.5">Weighted average across all validated constraints.</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Metrics Breakdown -->
+                    <div class="space-y-4 max-h-[600px] overflow-y-auto pr-1" id="detailsMetricsList">
+                        <!-- Dynamic metric listings -->
                     </div>
                 </div>
-            </section>
-
-            <!-- School Level View: Major Grid (Hidden by default) -->
-            <section id="view-school" class="hidden">
-                <h2 class="text-xl font-extrabold text-slate-900 tracking-tight mb-6" id="schoolHeaderTitle">School: Letters & Science</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="majorGrid">
-                    <!-- Dynamic Major Cards -->
-                </div>
-            </section>
+            </div>
+            
         </div>
     </main>
 
@@ -128,7 +160,7 @@
         // Initialize UI with loaded validation data
         window.addEventListener('load', () => {
             if (!window.validationData) {
-                alert("Error: data/validation_data.js not found or failed to load. Please run validate.py first!");
+                alert("Error: data/validation_data.js not found or failed to load. Please run build_database.py first!");
                 return;
             }
             
@@ -224,6 +256,7 @@
             }
             
             updateBreadcrumbs();
+            renderDetailsPanel();
         }
 
         // Highlight selected major card
@@ -327,6 +360,150 @@
                 `;
                 grid.appendChild(card);
             });
+        }
+
+        // Render Right Side Details Panel
+        function renderDetailsPanel() {
+            const catSpan = document.getElementById('detailsCategory');
+            const nameH3 = document.getElementById('detailsName');
+            const statsP = document.getElementById('detailsStats');
+            const scoreBadge = document.getElementById('detailsScoreBadge');
+            const metricsList = document.getElementById('detailsMetricsList');
+            
+            if (!currentNode) return;
+            
+            let typeName = "University Aggregate";
+            if (currentNode.type === "school") typeName = "School / College";
+            if (currentNode.type === "major") typeName = "Academic Major";
+            
+            catSpan.innerText = typeName;
+            nameH3.innerText = currentNode.name;
+            
+            const synthCount = currentNode.count_synth || (currentNode.details?.headcount?.synth?.count) || 0;
+            const refCount = currentNode.count_ref || (currentNode.details?.headcount?.ref?.count) || 0;
+            statsP.innerHTML = `Synthesized: <strong>${synthCount.toLocaleString()}</strong> | Reference: <strong>${refCount.toLocaleString()}</strong>`;
+            
+            const avgScore = currentNode.accuracy.average;
+            const accuracyColor = getAccuracyColor(avgScore);
+            scoreBadge.innerText = `${avgScore}%`;
+            scoreBadge.style.color = accuracyColor;
+            scoreBadge.style.borderColor = accuracyColor;
+            scoreBadge.style.backgroundColor = `rgba(0, 200, 0, 0.015)`;
+            
+            metricsList.innerHTML = "";
+            
+            const metricTitles = {
+                residency: "Tuition Residency Status",
+                citizenship: "US Citizenship Status",
+                gender: "Legal Sex Distribution",
+                race: "Race & Ethnicity",
+                admit_type: "Term Admit Type",
+                full_time_part_time: "Full/Part Time Status",
+                age: "Age Distribution",
+                gpa: "GPA Average Calibration",
+                headcount: "Total Headcount Verification"
+            };
+            
+            const details = currentNode.details || {};
+            
+            Object.keys(details).forEach(key => {
+                if (key === "coordinates") return; // skip coordinate match score
+                
+                const metric = details[key];
+                const title = metricTitles[key] || key;
+                const score = metric.accuracy;
+                const color = getAccuracyColor(score);
+                
+                const row = document.createElement('div');
+                row.className = "border border-slate-100 rounded-2xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-colors duration-200";
+                
+                let detailsHtml = "";
+                if (key === "headcount") {
+                    detailsHtml = `
+                        <div class="mt-3 text-xs grid grid-cols-2 gap-2 text-slate-500 font-mono pt-2 border-t border-slate-100">
+                            <div>Ref Count: <strong class="text-slate-800">${metric.ref.count.toLocaleString()}</strong></div>
+                            <div>Synth Count: <strong class="text-slate-800">${metric.synth.count.toLocaleString()}</strong></div>
+                        </div>
+                    `;
+                } else if (key === "gpa") {
+                    detailsHtml = `
+                        <div class="mt-3 text-xs grid grid-cols-2 gap-2 text-slate-500 font-mono pt-2 border-t border-slate-100">
+                            <div>Ref Average: <strong class="text-slate-800">${metric.ref.avg}</strong></div>
+                            <div>Synth Average: <strong class="text-slate-800">${metric.synth.avg}</strong></div>
+                        </div>
+                    `;
+                } else {
+                    const refDist = metric.ref || {};
+                    const synthDist = metric.synth || {};
+                    const allKeys = Array.from(new Set([...Object.keys(refDist), ...Object.keys(synthDist)])).sort();
+                    
+                    let tableRows = "";
+                    allKeys.forEach(k => {
+                        const rVal = refDist[k] || 0;
+                        const sVal = synthDist[k] || 0;
+                        
+                        const rTotal = Object.values(refDist).reduce((a, b) => a + b, 0) || 1;
+                        const sTotal = Object.values(synthDist).reduce((a, b) => a + b, 0) || 1;
+                        
+                        const rPct = (rVal / rTotal * 100).toFixed(1);
+                        const sPct = (sVal / sTotal * 100).toFixed(1);
+                        
+                        tableRows += `
+                            <tr class="border-b border-slate-100/50 last:border-0">
+                                <td class="py-1.5 text-slate-700 max-w-[120px] truncate" title="${k}">${k}</td>
+                                <td class="py-1.5 text-slate-600 text-right font-medium">${sPct}% <span class="text-[9px] text-slate-400 font-normal">(${sVal.toLocaleString()})</span></td>
+                                <td class="py-1.5 text-slate-600 text-right font-medium">${rPct}% <span class="text-[9px] text-slate-400 font-normal">(${rVal.toLocaleString()})</span></td>
+                            </tr>
+                        `;
+                    });
+                    
+                    detailsHtml = `
+                        <div class="mt-3 overflow-x-auto pt-2 border-t border-slate-100">
+                            <table class="w-full text-[10px] text-left text-slate-500">
+                                <thead>
+                                    <tr class="border-b border-slate-200 text-slate-400 uppercase text-[8px] font-bold tracking-wider">
+                                        <th class="pb-1.5 font-semibold">Value Option</th>
+                                        <th class="pb-1.5 font-semibold text-right">Synth % (N)</th>
+                                        <th class="pb-1.5 font-semibold text-right">Ref % (N)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="font-mono">
+                                    ${tableRows}
+                                </tbody>
+                            </table>
+                        </div>
+                    `;
+                }
+                
+                row.innerHTML = `
+                    <div class="flex items-center justify-between cursor-pointer select-none" onclick="toggleMetricExpand('${key}')">
+                        <span class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
+                            <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 transition-transform duration-300" id="chevron-${key}"></i>
+                            ${title}
+                        </span>
+                        <span class="font-mono text-[10px] font-bold px-2 py-0.5 border rounded-lg shrink-0" style="color: ${color}; border-color: ${color}; background-color: rgba(0, 200, 0, 0.02)">${score}%</span>
+                    </div>
+                    <div class="hidden transition-all duration-300" id="metric-details-${key}">
+                        ${detailsHtml}
+                    </div>
+                `;
+                metricsList.appendChild(row);
+            });
+        }
+
+        // Toggle dropdown metrics
+        function toggleMetricExpand(key) {
+            const el = document.getElementById(`metric-details-${key}`);
+            const chev = document.getElementById(`chevron-${key}`);
+            if (el) {
+                if (el.classList.contains('hidden')) {
+                    el.classList.remove('hidden');
+                    chev.classList.add('rotate-180');
+                } else {
+                    el.classList.add('hidden');
+                    chev.classList.remove('rotate-180');
+                }
+            }
         }
     </script>
 </body>

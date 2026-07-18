@@ -62,6 +62,14 @@ def prepare_all_data(data_dir="data"):
         "usState_academicLevel": "usState_academicLevel.csv",
         "country_academicLevel": "country_academicLevel.csv",
         
+        "wisconsinCounty_residency": "wisconsinCounty_residency.csv",
+        "usState_residency": "usState_residency.csv",
+        "country_residency": "country_residency.csv",
+        "wisconsinCounty_termAdmitType": "wisconsinCounty_termAdmitType.csv",
+        "usState_termAdmitType": "usState_termAdmitType.csv",
+        "country_admitType": "country_admitType.csv",
+        "internationalCountry_academicLevel": "internationalCountry_academicLevel.csv",
+        
         "wisconsinCounty_map": "wisconsinCounty_map.csv",
         "usMap": "usMap.csv",
         "worldMap": "worldMap.csv",
@@ -70,6 +78,7 @@ def prepare_all_data(data_dir="data"):
         "transfer_legalSex": "transfer_legalSex.csv",
         
         "grade_distribution": "grade_distribution_parsed.csv",
+        "gpa_parsed": "gpa_parsed.csv",
     }
     
     dfs = {}
