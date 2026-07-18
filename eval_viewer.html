@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Accuracy Validation Viewer</title>
+    <link rel="icon" type="image/jpeg" href="data/favicon.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        badgerRed: '#c5050c',
+                        badgerDarkRed: '#9b0006',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Red Hat Text', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Red Hat Display', sans-serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="flex flex-col h-screen overflow-hidden">
+
+    <!-- Top Navigation Header -->
+    <header class="h-16 bg-white border-b border-slate-100 flex items-center justify-between px-6 shrink-0 z-40 shadow-sm">
+        <div class="flex items-center gap-4">
+            <div class="w-9 h-9 rounded-lg bg-red-50 text-badgerRed flex items-center justify-center text-lg">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+                <span class="font-display font-extrabold text-base tracking-wide text-slate-900">SIMULATED CAMPUS EVALUATION</span>
+            </div>
+        </div>
+        <div class="flex items-center gap-6 text-xs text-slate-500">
+            <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-sm animate-pulse"></span>
+                <span>Active Database: <strong class="text-slate-800" id="statStudents">74,780</strong> Synthetic Pupils</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Bar -->
+    <nav class="bg-slate-50 border-b border-slate-100 px-6 h-11 flex items-center justify-between text-xs text-slate-400 shrink-0 select-none">
+        <div class="flex items-center gap-2 font-medium min-w-[400px]" id="breadcrumbs">
+            <span class="hover:text-badgerRed cursor-pointer transition flex items-center gap-1" onclick="navigate('university')"><i class="fa-solid fa-school"></i> University</span>
+        </div>
+    </nav>
+
+    <!-- Main Workspace Container -->
+    <main class="flex-1 overflow-y-auto p-8 bg-slate-50">
+        <div class="max-w-6xl mx-auto space-y-8">
+            
+            <!-- University Level View: School Grid -->
+            <section id="view-university" class="space-y-8">
+                <!-- University Aggregate Header -->
+                <div id="univ-aggregate-card" class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <!-- Dynamically populated -->
+                </div>
+                
+                <div>
+                    <h2 class="text-xl font-extrabold text-slate-900 tracking-tight mb-6" id="universityHeaderTitle">Academic Colleges & Schools</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="schoolGrid">
+                        <!-- Dynamic School Cards -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- School Level View: Major Grid (Hidden by default) -->
+            <section id="view-school" class="hidden">
+                <h2 class="text-xl font-extrabold text-slate-900 tracking-tight mb-6" id="schoolHeaderTitle">School: Letters & Science</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="majorGrid">
+                    <!-- Dynamic Major Cards -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="h-8 bg-white border-t border-slate-100 flex items-center justify-between px-6 shrink-0 z-30 text-[10px] text-slate-400 select-none shadow-sm">
+        <div>
+            <span>&copy; 2026 chep0k | MIT License</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="https://github.com/chep0k/synthetic-wisc" target="_blank" class="hover:text-badgerRed transition"><i class="fa-brands fa-github mr-1"></i>Source Code</a>
+        </div>
+    </footer>
+
+    <!-- Load Local Validation Data (CORS-friendly include) -->
+    <script src="data/validation_data.js"></script>
+    <script>
+        let currentNode = null;
+        let activeLevel = 'university';
+        let activeSchoolIdx = null;
+        let activeMajorIdx = null;
+
+        // Initialize UI with loaded validation data
+        window.addEventListener('load', () => {
+            if (!window.validationData) {
+                alert("Error: data/validation_data.js not found or failed to load. Please run validate.py first!");
+                return;
+            }
+            
+            // Sort schools in-place: Graduate School and Continuing Studies go to the end
+            const endSchools = ['Graduate School', 'Continuing Studies'];
+            window.validationData.children.sort((a, b) => {
+                const aEnd = endSchools.includes(a.name);
+                const bEnd = endSchools.includes(b.name);
+                if (aEnd && !bEnd) return 1;
+                if (!aEnd && bEnd) return -1;
+                if (aEnd && bEnd) {
+                    return endSchools.indexOf(a.name) - endSchools.indexOf(b.name);
+                }
+                return a.name.localeCompare(b.name);
+            });
+
+            // Sort majors within each school alphabetically
+            window.validationData.children.forEach(school => {
+                school.children.sort((a, b) => a.name.localeCompare(b.name));
+            });
+            
+            // Set student count in header from validationData
+            document.getElementById('statStudents').innerText = window.validationData.count_synth.toLocaleString();
+            
+            // Render the University Aggregate card once
+            renderUniversityAggregate();
+            
+            navigate('university');
+        });
+
+        // Helper to format color based on accuracy percent (HSL scale red-to-green)
+        function getAccuracyColor(percent) {
+            // Percent from 0 to 100 maps to hue from 0 (red) to 120 (green)
+            const hue = Math.max(0, Math.min(120, percent * 1.2));
+            return `hsl(${hue}, 85%, 40%)`;
+        }
+
+        // Render the University Aggregate block
+        function renderUniversityAggregate() {
+            const card = document.getElementById('univ-aggregate-card');
+            const data = window.validationData;
+            const avgScore = data.accuracy.average;
+            const accuracyColor = getAccuracyColor(avgScore);
+            
+            card.innerHTML = `
+                <div>
+                    <div class="text-[10px] font-bold text-red-500 uppercase tracking-widest mb-1">University Aggregate</div>
+                    <h2 class="text-xl font-extrabold text-slate-900 tracking-tight">${data.name}</h2>
+                    <div class="text-xs text-slate-500 mt-2">
+                        Synthesized Students: <strong class="font-mono text-slate-800">${data.count_synth.toLocaleString()}</strong> | 
+                        Reference Students: <strong class="font-mono text-slate-800">${data.count_ref.toLocaleString()}</strong>
+                    </div>
+                </div>
+                <div class="px-5 py-3 rounded-2xl bg-white border font-mono text-2xl font-black text-center" style="color: ${accuracyColor}; border-color: ${accuracyColor}; background-color: rgba(0, 200, 0, 0.02)">${avgScore}%</div>
+            `;
+        }
+
+        // Navigation state machine
+        function navigate(level, sIdx = null, mIdx = null) {
+            activeLevel = level;
+            
+            if (level === 'university') {
+                activeSchoolIdx = null;
+                activeMajorIdx = null;
+                
+                document.getElementById('view-university').classList.remove('hidden');
+                document.getElementById('view-school').classList.add('hidden');
+                
+                currentNode = window.validationData;
+                
+                renderSchoolGrid();
+            } else if (level === 'school') {
+                activeSchoolIdx = sIdx;
+                activeMajorIdx = null;
+                
+                document.getElementById('view-university').classList.add('hidden');
+                document.getElementById('view-school').classList.remove('hidden');
+                
+                const school = window.validationData.children[sIdx];
+                currentNode = school;
+                
+                document.getElementById('schoolHeaderTitle').innerText = `School: ${school.name}`;
+                
+                renderMajorGrid(sIdx);
+            } else if (level === 'major') {
+                activeSchoolIdx = sIdx;
+                activeMajorIdx = mIdx;
+                
+                const major = window.validationData.children[sIdx].children[mIdx];
+                currentNode = major;
+                
+                highlightMajorCard(mIdx);
+            }
+            
+            updateBreadcrumbs();
+        }
+
+        // Highlight selected major card
+        function highlightMajorCard(mIdx) {
+            document.querySelectorAll('.active-major-card').forEach(card => {
+                card.classList.remove('border-badgerRed', 'ring-2', 'ring-badgerRed/20');
+                card.classList.add('border-slate-100');
+            });
+            const selectedCard = document.getElementById(`major-card-${mIdx}`);
+            if (selectedCard) {
+                selectedCard.classList.remove('border-slate-100');
+                selectedCard.classList.add('border-badgerRed', 'ring-2', 'ring-badgerRed/20');
+            }
+        }
+
+        // Update breadcrumbs in navigation bar
+        function updateBreadcrumbs() {
+            const bc = document.getElementById('breadcrumbs');
+            bc.innerHTML = `<span class="hover:text-badgerRed cursor-pointer transition flex items-center gap-1" onclick="navigate('university')"><i class="fa-solid fa-school"></i> University</span>`;
+            
+            if (activeSchoolIdx !== null) {
+                const school = window.validationData.children[activeSchoolIdx];
+                bc.innerHTML += `
+                    <span class="mx-1.5 text-slate-300">/</span>
+                    <span class="hover:text-badgerRed cursor-pointer transition" onclick="navigate('school', ${activeSchoolIdx})">${school.name}</span>
+                `;
+            }
+            if (activeMajorIdx !== null) {
+                const major = window.validationData.children[activeSchoolIdx].children[activeMajorIdx];
+                bc.innerHTML += `
+                    <span class="mx-1.5 text-slate-300">/</span>
+                    <span class="text-slate-600 font-bold select-text">${major.name}</span>
+                `;
+            }
+        }
+
+        // Render schools grid
+        function renderSchoolGrid() {
+            const grid = document.getElementById('schoolGrid');
+            grid.innerHTML = "";
+            
+            const schoolIcons = {
+                'Letters & Science': 'fa-book-open-reader',
+                'Business': 'fa-chart-pie',
+                'Engineering': 'fa-gears',
+                'Education': 'fa-chalkboard-user',
+                'Agricultural and Life Sciences': 'fa-wheat-awn',
+                'Human Ecology': 'fa-people-roof',
+                'Graduate School': 'fa-user-graduate',
+                'Medicine and Public Health': 'fa-stethoscope',
+                'Continuing Studies': 'fa-arrow-rotate-left',
+                'Nursing': 'fa-user-nurse',
+                'Pharmacy': 'fa-pills',
+                'Law': 'fa-scale-balanced',
+                'Environmental Studies': 'fa-leaf',
+                'Veterinary Medicine': 'fa-paw'
+            };
+            
+            window.validationData.children.forEach((school, sIdx) => {
+                const icon = schoolIcons[school.name] || 'fa-building-columns';
+                const accuracyColor = getAccuracyColor(school.accuracy.average);
+                
+                const card = document.createElement('div');
+                card.className = "bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-lg hover:border-slate-200 cursor-pointer transition-all duration-300 flex flex-col justify-between group";
+                card.onclick = () => navigate('school', sIdx);
+                
+                card.innerHTML = `
+                    <div class="flex items-center justify-between">
+                        <div class="w-12 h-12 rounded-2xl bg-slate-50 text-slate-700 flex items-center justify-center text-xl group-hover:bg-red-50 group-hover:text-badgerRed transition-colors duration-300">
+                            <i class="fa-solid ${icon}"></i>
+                        </div>
+                        <span class="font-mono text-xs font-bold px-2.5 py-1 border rounded-xl" style="color: ${accuracyColor}; border-color: ${accuracyColor}; background-color: rgba(0, 200, 0, 0.02)">${school.accuracy.average}%</span>
+                    </div>
+                    <div class="mt-6">
+                        <h3 class="font-extrabold text-slate-800 text-base tracking-tight leading-snug group-hover:text-badgerRed transition-colors">${school.name}</h3>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Render majors grid
+        function renderMajorGrid(sIdx) {
+            const grid = document.getElementById('majorGrid');
+            grid.innerHTML = "";
+            
+            const school = window.validationData.children[sIdx];
+            school.children.forEach((major, mIdx) => {
+                const accuracyColor = getAccuracyColor(major.accuracy.average);
+                
+                const card = document.createElement('div');
+                card.className = "bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-lg hover:border-slate-200 cursor-pointer transition-all duration-300 flex flex-col justify-between group active-major-card";
+                card.id = `major-card-${mIdx}`;
+                card.onclick = () => navigate('major', sIdx, mIdx);
+                
+                card.innerHTML = `
+                    <div class="flex items-start justify-between gap-4">
+                        <h3 class="font-extrabold text-slate-800 text-sm tracking-tight leading-snug group-hover:text-badgerRed transition-colors pr-2">${major.name}</h3>
+                        <span class="font-mono text-xs font-bold px-2.5 py-1 border rounded-xl shrink-0" style="color: ${accuracyColor}; border-color: ${accuracyColor}; background-color: rgba(0, 200, 0, 0.02)">${major.accuracy.average}%</span>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+    </script>
+</body>
+</html>

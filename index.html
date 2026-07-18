@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual UW-Madison Campus Explorer</title>
+    <title>Simulated UW-Madison</title>
     <link rel="icon" type="image/jpeg" href="data/favicon.jpg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,7 +64,7 @@
             <div class="w-16 h-16 rounded-2xl bg-red-50 text-badgerRed flex items-center justify-center text-3xl mb-6 shadow-sm">
                 <i class="fa-solid fa-graduation-cap"></i>
             </div>
-            <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 mb-2">Virtual UW-Madison</h1>
+            <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 mb-2">Simulated UW-Madison</h1>
             <p class="text-slate-500 text-sm mb-6">Interactive Campus Explorer</p>
             
             <div class="bg-red-50/50 border border-red-100/50 rounded-2xl p-5 mb-8 text-slate-700 text-sm leading-relaxed text-left">
@@ -95,7 +95,7 @@
                 <i class="fa-solid fa-graduation-cap"></i>
             </div>
             <div>
-                <span class="font-display font-extrabold text-base tracking-wide text-slate-900">VIRTUAL CAMPUS</span>
+                <span class="font-display font-extrabold text-base tracking-wide text-slate-900">SIMULATED CAMPUS</span>
             </div>
         </div>
         <div class="flex items-center gap-6 text-xs text-slate-500">
@@ -336,7 +336,7 @@
                     locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`
                 });
                 
-                status.innerText = "Downloading virtual_university.db (32MB)...";
+                status.innerText = "Downloading virtual_university.db (44MB)...";
                 percentText.innerText = "45%";
                 progress.style.width = "45%";
                 
@@ -344,7 +344,7 @@
                 if (!response.ok) throw new Error("Database download failed!");
                 
                 const reader = response.body.getReader();
-                const contentLength = +response.headers.get('Content-Length') || 33554432;
+                const contentLength = +response.headers.get('Content-Length') || 46559232;
                 
                 let receivedLength = 0;
                 let chunks = [];
@@ -358,7 +358,7 @@
                     const pct = Math.min(45 + Math.round((receivedLength / contentLength) * 45), 90);
                     percentText.innerText = `${pct}%`;
                     progress.style.width = `${pct}%`;
-                    status.innerText = `Downloading database: ${Math.round(receivedLength / (1024*1024))}MB / 32MB`;
+                    status.innerText = `Downloading database: ${Math.round(receivedLength / (1024*1024))}MB / 44MB`;
                 }
                 
                 status.innerText = "Compiling Database in memory...";

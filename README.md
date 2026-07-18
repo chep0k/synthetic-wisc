@@ -1,4 +1,4 @@
-# Synthetic Virtual UW-Madison
+# Simulated UW-Madison
 
 100% data-accurate synthetic student population of UW-Madison. Access via [Live Explorer](#live-explorer).
 
@@ -14,9 +14,13 @@ DATA.md  --->  ALGO.md, PRD.md   --->  UI.md
 
 ## Directory Structure
 
-* **`./data`**: All raw input tables, generated sqlite database (`virtual_university.db`), output validation files, and web assets. See [DATA.md](DATA.md).
-* **`./src`**: Python scripts for data preparation, synthetic generation, and lightweight validation guardrails.
+`./index.html`: [Live Explorer](#live-explorer) frontend.
 
+`./eval_viewer.html`: Validation metrics viewer.
+
+`./data`: All input tables from the university website, generated sqlite database (`virtual_university.db`), output validation files, and web assets. See [DATA.md](DATA.md).
+
+`./src`: Python scripts for data preparation, synthetic generation, and lightweight validation guardrails:
 ```python
 # generate `data/virtual_university.db` and `data/validation_data.js`
 # uses `src/prepare_data.py` and `src/populate.py`
@@ -25,6 +29,8 @@ python src/build_database.py
 # check 100% accuracy
 python src/check_guardrails.py
 ```
+
+`./*md`: documentation.
 
 ## Live Explorer
 

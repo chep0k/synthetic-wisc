@@ -1,8 +1,8 @@
-# Product Requirements Document: Virtual UW-Madison Campus
+# Product Requirements Document: Simulated UW-Madison
 
 ## 1. Product Overview & Goal
 
-The end product is a **Virtual UW-Madison Campus**: an interactive, static web application that simulates a complete student-course network of 51,822 unique pupils based on real Fall 2025–2026 registrar data.
+The end product is a **Simulated UW-Madison**: an interactive, static web application that simulates a complete student-course network of 51,822 unique pupils based on real Fall 2025–2026 registrar data.
 
 > For implementation simplicity and to preserve 100% headcount fidelity at the academic plan level, students with multiple plans (double majors/certificates) are instantiated as separate pupil units. This raises the active database size in the final implementation to **74,780** synthetic pupils.
 
